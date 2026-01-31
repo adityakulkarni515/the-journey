@@ -1,0 +1,381 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   PREMIUM DARK THEME - THE JOURNEY
+   A personal museum of experiences
+   ============================================ */
+
+@layer base {
+  :root {
+    --background: 10 10 10;
+    --foreground: 250 250 250;
+    --muted: 161 161 170;
+    --subtle: 113 113 122;
+    --accent-gold: 212 165 116;
+  }
+
+  * {
+    @apply border-white/10;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/20 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/30;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-accent-gold/30 text-foreground;
+  }
+}
+
+@layer components {
+  /* ============================================
+     TYPOGRAPHY COMPONENTS
+     ============================================ */
+
+  .text-display-hero {
+    @apply text-display-xl font-display font-bold tracking-tight;
+    text-wrap: balance;
+  }
+
+  .text-display-title {
+    @apply text-display-lg font-display font-semibold tracking-tight;
+    text-wrap: balance;
+  }
+
+  .text-display-heading {
+    @apply text-display-md font-display font-semibold;
+    text-wrap: balance;
+  }
+
+  .text-display-subheading {
+    @apply text-display-sm font-display font-medium;
+  }
+
+  .text-body-large {
+    @apply text-lg md:text-xl leading-relaxed text-foreground-muted;
+  }
+
+  .text-body {
+    @apply text-base leading-relaxed text-foreground-muted;
+  }
+
+  .text-caption {
+    @apply text-sm text-foreground-subtle uppercase tracking-widest;
+  }
+
+  /* ============================================
+     LAYOUT COMPONENTS
+     ============================================ */
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-article {
+    @apply max-w-3xl mx-auto px-4 sm:px-6;
+  }
+
+  .section-spacing {
+    @apply py-section;
+  }
+
+  /* ============================================
+     CARD COMPONENTS
+     ============================================ */
+
+  .card-journey {
+    @apply relative overflow-hidden rounded-2xl bg-background-secondary border border-white/5;
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .card-journey:hover {
+    @apply border-white/10 shadow-2xl shadow-black/50;
+    transform: translateY(-4px);
+  }
+
+  .card-moment {
+    @apply relative p-6 rounded-xl bg-background-tertiary/50 backdrop-blur-sm;
+    @apply border border-white/5 transition-all duration-300;
+  }
+
+  .card-moment:hover {
+    @apply border-white/10 bg-background-tertiary;
+  }
+
+  /* ============================================
+     BUTTON COMPONENTS
+     ============================================ */
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3;
+    @apply bg-foreground text-background font-medium rounded-full;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-foreground/90 hover:scale-105;
+    @apply focus:outline-none focus:ring-2 focus:ring-foreground/50 focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3;
+    @apply bg-transparent text-foreground font-medium rounded-full;
+    @apply border border-white/20 transition-all duration-300 ease-out;
+    @apply hover:bg-white/5 hover:border-white/30;
+    @apply focus:outline-none focus:ring-2 focus:ring-white/30;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2;
+    @apply text-foreground-muted font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply hover:text-foreground hover:bg-white/5;
+  }
+
+  /* ============================================
+     JOURNEY MODE BADGES
+     ============================================ */
+
+  .badge-solo-bike {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+    @apply bg-journey-solo/10 text-journey-solo border border-journey-solo/20;
+    @apply text-xs font-medium uppercase tracking-wider;
+  }
+
+  .badge-car-journey {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+    @apply bg-journey-group/10 text-journey-group border border-journey-group/20;
+    @apply text-xs font-medium uppercase tracking-wider;
+  }
+
+  .badge-flight {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+    @apply bg-accent-sky/10 text-accent-sky border border-accent-sky/20;
+    @apply text-xs font-medium uppercase tracking-wider;
+  }
+
+  .badge-spiritual {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+    @apply bg-journey-spiritual/10 text-journey-spiritual border border-journey-spiritual/20;
+    @apply text-xs font-medium uppercase tracking-wider;
+  }
+
+  .badge-altitude {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full;
+    @apply bg-journey-altitude/10 text-journey-altitude border border-journey-altitude/20;
+    @apply text-xs font-medium uppercase tracking-wider;
+  }
+
+  /* ============================================
+     INTERACTIVE ELEMENTS
+     ============================================ */
+
+  .glow-pin {
+    @apply relative;
+  }
+
+  .glow-pin::before {
+    content: "";
+    @apply absolute inset-0 rounded-full animate-pulse-glow;
+    background: radial-gradient(circle, var(--glow-color, rgba(212, 165, 116, 0.6)) 0%, transparent 70%);
+    transform: scale(2);
+    z-index: -1;
+  }
+
+  .timeline-line {
+    @apply absolute left-4 md:left-1/2 top-0 bottom-0 w-px;
+    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0.1) 90%, transparent);
+  }
+
+  .timeline-dot {
+    @apply relative w-3 h-3 rounded-full bg-foreground;
+    @apply before:absolute before:inset-0 before:rounded-full before:bg-foreground/30 before:animate-ping;
+  }
+
+  /* ============================================
+     MAP STYLES
+     ============================================ */
+
+  .mapboxgl-map {
+    @apply rounded-xl overflow-hidden;
+  }
+
+  .map-marker {
+    @apply w-4 h-4 rounded-full bg-accent-gold cursor-pointer;
+    @apply transition-transform duration-200 hover:scale-150;
+    box-shadow: 0 0 20px rgba(212, 165, 116, 0.5);
+  }
+
+  .map-route-bike {
+    stroke: theme("colors.journey.solo");
+    stroke-width: 3;
+    stroke-dasharray: 10, 5;
+    animation: dashMove 1s linear infinite;
+  }
+
+  .map-route-car {
+    stroke: theme("colors.journey.group");
+    stroke-width: 3;
+  }
+
+  @keyframes dashMove {
+    to {
+      stroke-dashoffset: -15;
+    }
+  }
+
+  /* ============================================
+     AMBIENT & ATMOSPHERIC
+     ============================================ */
+
+  .gradient-overlay {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.8) 0%,
+      rgba(10, 10, 10, 0.4) 30%,
+      rgba(10, 10, 10, 0.4) 70%,
+      rgba(10, 10, 10, 0.95) 100%
+    );
+  }
+
+  .noise-overlay {
+    @apply absolute inset-0 pointer-events-none opacity-[0.03];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  .vignette {
+    @apply absolute inset-0 pointer-events-none;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 10, 0.6) 100%);
+  }
+
+  /* ============================================
+     PROSE STYLES FOR JOURNAL CONTENT
+     ============================================ */
+
+  .prose-journey {
+    @apply text-foreground-muted leading-relaxed;
+  }
+
+  .prose-journey h2 {
+    @apply text-display-heading text-foreground mt-16 mb-6;
+  }
+
+  .prose-journey h3 {
+    @apply text-display-subheading text-foreground mt-12 mb-4;
+  }
+
+  .prose-journey p {
+    @apply mb-6 text-lg leading-relaxed;
+  }
+
+  .prose-journey blockquote {
+    @apply pl-6 border-l-2 border-accent-gold/50 italic text-foreground/80 my-8;
+  }
+
+  .prose-journey img {
+    @apply rounded-xl my-8;
+  }
+
+  .prose-journey a {
+    @apply text-accent-gold underline underline-offset-4 decoration-accent-gold/30;
+    @apply hover:decoration-accent-gold transition-colors;
+  }
+
+  /* ============================================
+     IMPACT GRAPH
+     ============================================ */
+
+  .impact-bar {
+    @apply h-2 rounded-full bg-white/10 overflow-hidden;
+  }
+
+  .impact-bar-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+  }
+
+  .impact-physical {
+    @apply bg-gradient-to-r from-orange-500 to-red-500;
+  }
+
+  .impact-emotional {
+    @apply bg-gradient-to-r from-pink-500 to-purple-500;
+  }
+
+  .impact-spiritual {
+    @apply bg-gradient-to-r from-violet-500 to-indigo-500;
+  }
+
+  .impact-chaos {
+    @apply bg-gradient-to-r from-yellow-500 to-orange-500;
+  }
+}
+
+@layer utilities {
+  /* Text balance for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* Line clamp utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,2630 @@
+/**
+ * ============================================
+ * JOURNEY DATA
+ * All journey metadata and placeholder content
+ * Replace placeholder content with real stories
+ * ============================================
+ */
+
+import type { Journey, JourneySummary } from "@/types/journey";
+
+/**
+ * Complete journey data
+ * Each journey follows the documentary structure:
+ * 1. Before the Journey (Why, Expectations, Fears)
+ * 2. On the Road (Day-wise experiences)
+ * 3. Peak Experience (Defining moment)
+ * 4. After Returning (Transformation)
+ */
+export const journeys: Journey[] = [
+  // ============================================
+  // 2022 - NORTH INDIA
+  // ============================================
+  {
+    id: "north-india-2022",
+    slug: "north-india-2022",
+    title: "North India",
+    subtitle: "Banaras, Agra, Mathura, Delhi — A 10-day odyssey with friends",
+    date: "2022-11",
+    year: 2022,
+    month: "November",
+    travelMode: "Flight / Train",
+    companionship: "Mixed",
+    categories: ["cultural", "spiritual"],
+    destination: "North India",
+    region: "North India",
+    route: {
+      locations: [
+        { name: "Hubli", coordinates: { lat: 15.3647, lng: 75.1240 }, type: "start" },
+        { name: "Bangalore", coordinates: { lat: 12.9716, lng: 77.5946 }, type: "waypoint" },
+        { name: "Varanasi", coordinates: { lat: 25.3176, lng: 82.9739 }, type: "highlight", description: "Kashi Vishwanath & Ghats" },
+        { name: "Agra", coordinates: { lat: 27.1767, lng: 78.0081 }, type: "highlight", description: "Taj Mahal" },
+        { name: "Mathura", coordinates: { lat: 27.4924, lng: 77.6737 }, type: "waypoint", description: "Prem Mandir" },
+        { name: "Delhi", coordinates: { lat: 28.6139, lng: 77.2090 }, type: "end", description: "Red Fort, Akshardham" },
+      ],
+      totalDistance: 1800,
+      totalDays: 10,
+      terrainDifficulty: "easy",
+    },
+    heroImage: "/images/journeys/north-india-2022/featured.jpg",
+    thumbnailImage: "/images/journeys/north-india-2022/hero.jpg",
+    galleryImages: [
+      "/images/journeys/north-india-2022/gallery-1.jpg",
+      "/images/journeys/north-india-2022/gallery-2.jpg",
+      "/images/journeys/north-india-2022/gallery-3.jpg",
+      "/images/journeys/north-india-2022/gallery-4.jpg",
+      "/images/journeys/north-india-2022/gallery-5.jpg",
+      "/images/journeys/north-india-2022/gallery-6.jpg",
+    ],
+    tagline: "What is life when you see 12 bodies burning at once, and the man asks for the next one?",
+    introduction:
+      "This trip was supposed to be solo. I had planned everything myself, mapped out the cities, booked the flights. Then I asked my friends Prathamesh and Prajwal if they wanted to join — and somehow, against all odds, they made it. It was also our FIRST FLIGHT EXPERIENCE EVER — and we didn't just fly once, we experienced two completely different aircraft on day one: the propeller-driven ATR and the jet-powered Airbus A320. What started as a solo adventure turned into a 10-day odyssey through the spiritual heart of India, from the burning ghats of Banaras to the white marble of Taj Mahal, with bhang thandai and Banarasi paan fueling our philosophical debates along the way. The paan became as much a ritual as the bhang — consumed constantly, made by artists who sold their craft for just ₹7.",
+    whyIWent:
+      "I wanted to see Banaras — the city that has fascinated me since I first read about it. The oldest continuously inhabited city in the world. A place where death is celebrated, where life and mortality dance together on the ghats every single day. The Taj Mahal and Delhi were additions, but Banaras was the real calling.",
+    transformation: {
+      before: {
+        mindset: "Excited but slightly nervous about navigating North India for the first time. The trip was planned solo initially, which added both thrill and anxiety. This was also going to be our FIRST FLIGHT EVER — the excitement of flying was almost as big as the trip itself.",
+        expectations: [
+          "To experience flying for the first time in our lives",
+          "To witness the famous ghats and the Ganga Aarti",
+          "To understand why people come to Banaras to die",
+          "To see the Taj Mahal in person finally",
+        ],
+        fears: [
+          "First time flying — would we be scared? Would we handle it?",
+          "Getting lost in the narrow lanes of Banaras",
+          "The intensity of experiencing death so openly at Manikarnika",
+          "Managing logistics across multiple cities",
+        ],
+      },
+      after: {
+        changes: [
+          "A completely shifted perspective on death — it's not an ending, just a transition",
+          "Learned to embrace chaos and find peace within it",
+          "Discovered how much richer travel becomes with the right companions",
+        ],
+        perspectives: [
+          "The workers at cremation ghats see death as routine work, not tragedy — 'get me the next body so I can finish my shift'",
+          "Spirituality in India isn't separate from daily life; it's woven into every chai, every lane, every conversation",
+          "The bhang culture in Banaras is deeply tied to Shiva worship, not just recreation",
+        ],
+        whatStayed: [
+          "The image of 12 bodies burning simultaneously at Manikarnika, and the strange peace I felt watching",
+          "The boatman's stories about snake-bite victims wrapped in banana leaves, thrown into the Ganga with hope of resurrection",
+          "The taste of malaiyo — a dessert that only exists in Banaras winters",
+          "The ₹7 paan makers who taught me that some artists don't care about money — they care about their craft",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "Midnight at Manikarnika Ghat",
+      description:
+        "We walked to Manikarnika Ghat late at night, still feeling the effects of bhang thandai from earlier. The ghat was alive with fire — 12 funeral pyres burning simultaneously. The flames illuminated everything in orange. We stood there, watching bodies turn to ash, watching families grieve, watching workers casually ask for the next body. And somehow, instead of horror, I felt an inexplicable peace. Death stripped of all drama, reduced to its essence — just a body returning to elements. The worker's mundane request — 'please get me the next one, I want to finish my work' — echoed in my head for days. What is life, really?",
+      type: "awe",
+      quote: "Please get me the next dead body so that I can burn it and get done with my work.",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2022-11-01",
+        title: "The Journey Begins — Hubli to Varanasi",
+        location: "Varanasi",
+        mood: "euphoric",
+        summary: "Started at 10 AM from Hubli Airport. This was our FIRST FLIGHT EXPERIENCE EVER — and what a way to start! We flew on two different aircraft types in one day: first the smaller ATR propeller plane to Bangalore, then the massive Airbus A320 to Varanasi. The excitement of flying for the first time, experiencing two completely different aircraft, all in one day. Landed at 8:30 PM. Met a cab driver who became our friend for the trip. First stop: bhang thandai. Our booked hotel was full and far from the temple, so we found Shanti Guest House — literally next to Kashi Vishwanath Temple. The bhang hit us as we navigated the narrow lanes with Google Maps.",
+        highlights: [
+          "FIRST FLIGHT EVER — both ATR and Airbus A320 in one day!",
+          "Experienced propeller plane (ATR) and jet (A320) back to back",
+          "Made friends with the cab driver",
+          "Tried bhang thandai for the first time",
+          "Found Shanti Guest House next to Kashi Vishwanath",
+        ],
+        food: ["Bhang Thandai"],
+        peoplemet: ["Cab driver (became our guide)", "Shanti Guest House owner"],
+        journalEntry: "First flight of my life today. TWO flights actually. The ATR was small, you could feel every movement, hear the propellers. Then the A320 — completely different, smooth, massive. Can't believe we experienced both types of aircraft on day one itself. From never having flown to becoming aircraft experts in 8 hours!",
+      },
+      {
+        day: 1,
+        date: "2022-11-01",
+        title: "Midnight at Manikarnika",
+        location: "Manikarnika Ghat, Varanasi",
+        mood: "content",
+        summary: "Late night, still under the influence of bhang, we walked to Manikarnika Ghat. 12 dead bodies burning simultaneously. The cremation workers casually working through the night. 'Please get me the next one' — this sentence haunted me. What is life when death is just another shift at work?",
+        highlights: [
+          "Witnessed 12 simultaneous cremations",
+          "The worker's casual approach to death",
+          "Philosophical conversations fueled by bhang",
+        ],
+        journalEntry: "Saw 12 bodies burning at once. The fire, the ash, the families. And then the guy just asks for the next body like he's asking for the next order at a restaurant. Everything we stress about seems so small now.",
+      },
+      {
+        day: 2,
+        date: "2022-11-02",
+        title: "Exploring the Lanes of Banaras",
+        location: "Varanasi",
+        mood: "euphoric",
+        summary: "Spent the day getting lost in the narrow streets of Banaras. Visited Kal Bhairav Mandir — the fierce form of Shiva who is believed to be the kotwal (police chief) of Kashi. Tried the famous kachoris and discovered malaiyo — a winter-only dessert that melts in your mouth. But the real discovery was the Banarasi paan. The paan makers here aren't businessmen — they're artists. Pure passion in their craft, and they sell each paan for just ₹7. We were shocked when we heard the price. From this day, paan and bhang became our daily rituals in Banaras.",
+        highlights: [
+          "Kal Bhairav Mandir visit",
+          "Famous Banarasi kachoris",
+          "Discovered malaiyo dessert",
+          "Found the ₹7 paan artists — pure passion, not business",
+        ],
+        food: ["Banarasi Kachori", "Malaiyo", "Banarasi Paan (₹7)"],
+        journalEntry: "These paan makers are not here to make money. They are artists. The way they fold each leaf, the care they put into every ingredient — and they charge ₹7. Seven rupees! Back home, paan costs 10x more and has none of this soul.",
+      },
+      {
+        day: 3,
+        date: "2022-11-03",
+        title: "Kashi Vishwanath & The 64 Ghats",
+        location: "Varanasi & Sarnath",
+        mood: "euphoric",
+        summary: "Darshan at Kashi Vishwanath Temple — the spiritual heart of Hinduism. Then visited Sarnath where Buddha gave his first sermon. Tried litti chokha for the first time — the smoky flavor from wood and coal fire was incredible. Evening: booked a private boat and sailed across all 64 ghats. The boatman told us stories — including one about snake-bite victims being wrapped in banana leaves and thrown into Ganga, hoping the sacred water would bring them back to life.",
+        highlights: [
+          "Kashi Vishwanath darshan",
+          "Sarnath — where Buddhism began",
+          "Private boat ride across 64 ghats",
+          "Boatman's story about snake-bite resurrection",
+        ],
+        food: ["Litti Chokha"],
+        peoplemet: ["The storytelling boatman"],
+        journalEntry: "The boatman said if someone dies from snake bite, they don't burn the body. They wrap it in banana leaves and put it in Ganga, hoping the person can come back alive. The faith here is something else.",
+      },
+      {
+        day: 4,
+        date: "2022-11-04",
+        title: "Train to Agra",
+        location: "Varanasi to Agra",
+        mood: "content",
+        summary: "Said goodbye to Banaras. Overnight train journey to Agra. The rhythmic sound of the train, chai at stations, conversations with co-passengers. North Indian train travel has its own charm.",
+        highlights: ["Overnight train experience", "Station chai"],
+      },
+      {
+        day: 5,
+        date: "2022-11-05",
+        title: "The Taj Mahal",
+        location: "Agra",
+        mood: "euphoric",
+        summary: "Finally saw the Taj Mahal in person. No photograph prepares you for the scale, the symmetry, the way the marble changes color with the light. Spent hours just sitting and staring. Evening was for exploring Agra's street food scene.",
+        highlights: [
+          "Taj Mahal visit",
+          "The changing colors of marble",
+          "Agra street food exploration",
+        ],
+        food: ["Agra Petha", "Bedai", "Jalebi"],
+      },
+      {
+        day: 6,
+        date: "2022-11-06",
+        title: "Prem Mandir, Vrindavan",
+        location: "Mathura / Vrindavan",
+        mood: "content",
+        summary: "Bus from Agra to Mathura. Visited the stunning Prem Mandir in Vrindavan — a white marble temple dedicated to Radha Krishna. The intricate carvings and the evening light show were mesmerizing. Krishna's birthplace has a different energy altogether.",
+        highlights: [
+          "Prem Mandir architecture",
+          "Vrindavan's spiritual atmosphere",
+          "Evening light show",
+        ],
+      },
+      {
+        day: 7,
+        date: "2022-11-07",
+        title: "Arrival in Delhi — Red Fort & Chandni Chowk",
+        location: "Delhi",
+        mood: "content",
+        summary: "Train from Mathura to Delhi. Evening visit to Red Fort — standing where Mughal emperors once stood. Then dove into the chaos of Chandni Chowk for some of the best street food in India.",
+        highlights: [
+          "Red Fort in the evening light",
+          "Chandni Chowk food walk",
+        ],
+        food: ["Paranthe Wali Gali parathas", "Chandni Chowk chaat"],
+      },
+      {
+        day: 8,
+        date: "2022-11-08",
+        title: "Lotus Temple & Akshardham",
+        location: "Delhi",
+        mood: "content",
+        summary: "Visited the Lotus Temple — a Bahá'í House of Worship known for its stunning architecture. Then spent the afternoon at Akshardham — the sheer scale and detail of the carvings is overwhelming. India's craftsmanship on full display.",
+        highlights: [
+          "Lotus Temple's unique architecture",
+          "Akshardham's intricate carvings",
+          "Boat ride at Akshardham",
+        ],
+      },
+      {
+        day: 9,
+        date: "2022-11-09",
+        title: "Qutub Minar & Shopping",
+        location: "Delhi",
+        mood: "content",
+        summary: "Morning at Qutub Minar — the tallest brick minaret in the world. The iron pillar that hasn't rusted in over 1600 years is mind-blowing. Afternoon at Sarojini Market for some shopping. Last day vibes.",
+        highlights: [
+          "Qutub Minar visit",
+          "The rust-free iron pillar mystery",
+          "Sarojini Market shopping",
+        ],
+      },
+      {
+        day: 10,
+        date: "2022-11-10",
+        title: "Homeward Bound",
+        location: "Delhi to Hubli",
+        mood: "content",
+        summary: "Direct flight from Delhi back home. 10 days, 5 cities, countless memories. The journey that started as a solo plan ended as a story with friends — Prathamesh and Prajwal made it unforgettable.",
+        highlights: ["Direct flight home", "Reflecting on 10 incredible days"],
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/north-india-2022/moment-manikarnika.jpg",
+        caption: "12 bodies burning. The worker asks for the next one. And somehow, I felt at peace. Death, stripped of all its drama.",
+        location: "Manikarnika Ghat, Varanasi",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/north-india-2022/moment-boat.jpg",
+        caption: "The boatman told us snake-bite victims are wrapped in banana leaves and put in Ganga, hoping the water will bring them back. Faith is strange and beautiful.",
+        location: "Boat ride, Varanasi",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/north-india-2022/moment-taj.jpg",
+        caption: "No photo prepares you. The Taj just sits there, impossibly white, impossibly perfect. We sat for hours, saying nothing.",
+        location: "Taj Mahal, Agra",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/north-india-2022/moment-bhang.jpg",
+        caption: "First bhang thandai hit us as we were navigating the lanes with Google Maps. Banaras welcomed us properly.",
+        location: "Varanasi",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/north-india-2022/moment-friends.jpg",
+        caption: "This was supposed to be solo. Prathamesh and Prajwal joining made it ten times better. Some journeys are meant to be shared.",
+        location: "Somewhere in North India",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/north-india-2022/moment-paan.png",
+        caption: "₹7 for a paan made by an artist, not a businessman. These paan makers aren't here for profit — they're here for the craft. Banaras teaches you that passion doesn't need a price tag.",
+        location: "Varanasi",
+      },
+      {
+        id: "moment-7",
+        image: "/images/journeys/north-india-2022/moment-flight.jpg",
+        caption: "First flight of our lives. Not one, but two aircraft in a single day — the small ATR with its propellers humming, then the massive A320 soaring above the clouds. From zero flights to aircraft experts in 8 hours.",
+        location: "Hubli → Bangalore → Varanasi",
+      },
+      {
+        id: "moment-8",
+        image: "/images/journeys/north-india-2022/moment-ganga-aarti.jpg",
+        caption: "The Ganga Aarti at Dashashwamedh Ghat. Fire, bells, chants, and thousands of people in unison. The Ganga reflecting the flames. This is why people come to Banaras — to witness the divine in the everyday.",
+        location: "Dashashwamedh Ghat, Varanasi",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Death doesn't have to be dramatic. At Manikarnika, it's just another day at work. That perspective shift stays with you.",
+        category: "life",
+      },
+      {
+        id: "learning-2",
+        insight: "Some trips planned solo are meant to be shared. Flexibility in plans often leads to better stories.",
+        category: "travel",
+      },
+      {
+        id: "learning-3",
+        insight: "The faith people have in sacred places — like believing Ganga water can resurrect snake-bite victims — is neither right nor wrong. It's just human.",
+        category: "spiritual",
+      },
+      {
+        id: "learning-4",
+        insight: "Bhang isn't just intoxication in Banaras; it's a legitimate spiritual practice tied to Shiva worship. Context changes everything.",
+        category: "people",
+      },
+      {
+        id: "learning-5",
+        insight: "The paan makers of Banaras sell their art for ₹7 — not because they don't know its worth, but because they value craft over commerce. Some people work for passion, not profit.",
+        category: "people",
+      },
+      {
+        id: "learning-6",
+        insight: "First experiences hit different. Flying for the first time, seeing two aircraft types in one day — these 'firsts' stay with you forever. Never underestimate the power of doing something for the first time.",
+        category: "life",
+      },
+    ],
+    impact: {
+      physical: 45,
+      emotional: 80,
+      spiritual: 85,
+      chaos: 70,
+    },
+    readingTime: 12,
+    featured: true,
+    published: true,
+    lastUpdated: "2024-01-15",
+  },
+
+  // ============================================
+  // 2023 - BANARAS
+  // ============================================
+  {
+    id: "banaras-2023",
+    slug: "banaras-2023",
+    title: "Banaras",
+    subtitle: "Where death teaches you to live",
+    date: "2023-03",
+    year: 2023,
+    month: "March",
+    travelMode: "Flight",
+    companionship: "Solo / Mixed",
+    categories: ["spiritual", "cultural"],
+    destination: "Varanasi",
+    region: "Uttar Pradesh",
+    heroImage: "/images/journeys/banaras-2023/hero.jpg",
+    thumbnailImage: "/images/journeys/banaras-2023/thumb.jpg",
+    galleryImages: [
+      "/images/journeys/banaras-2023/gallery-1.jpg",
+      "/images/journeys/banaras-2023/gallery-2.jpg",
+    ],
+    tagline: "At the ghats where time loses meaning.",
+    introduction:
+      "Placeholder: Write about your first encounter with Banaras. The assault on senses, the spiritual weight in the air, the ancient stones that have witnessed everything.",
+    whyIWent:
+      "Placeholder: What pulled you to the oldest living city? Curiosity about death? Seeking spirituality? Or just following an inexplicable calling?",
+    transformation: {
+      before: {
+        mindset: "Placeholder: Your state of mind before Banaras",
+        expectations: [
+          "Placeholder: What did you expect from the city of Shiva?",
+        ],
+        fears: ["Placeholder: Any apprehensions about confronting mortality?"],
+      },
+      after: {
+        changes: ["Placeholder: How Banaras changed your relationship with life and death"],
+        perspectives: ["Placeholder: New understanding of impermanence"],
+        whatStayed: ["Placeholder: The ghats at sunrise, the aarti at dusk"],
+      },
+    },
+    peakExperience: {
+      title: "Placeholder: At Manikarnika",
+      description:
+        "Placeholder: Describe standing at the burning ghat, watching pyres, understanding something wordless about existence.",
+      type: "devotion",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2023-03-01",
+        title: "Placeholder: Arrival at the Ghats",
+        location: "Dashashwamedh Ghat",
+        mood: "content",
+        summary: "Placeholder: First impressions of Banaras",
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/banaras-2023/moment-1.jpg",
+        caption: "Placeholder: A moment of stillness amidst the chaos of the ghats.",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Placeholder: What Banaras taught you about living",
+        category: "spiritual",
+      },
+    ],
+    impact: {
+      physical: 25,
+      emotional: 85,
+      spiritual: 95,
+      chaos: 60,
+    },
+    readingTime: 10,
+    featured: true,
+    published: true,
+    lastUpdated: "2024-01-01",
+  },
+
+  // ============================================
+  // 2023 - SPITI VALLEY (SOLO BIKE RIDE)
+  // The Dream That Changed Course
+  // ============================================
+  {
+    id: "spiti-2023",
+    slug: "spiti-2023",
+    title: "Spiti Valley",
+    subtitle: "When Ladakh closed, the mountains opened another door",
+    date: "2023-05",
+    year: 2023,
+    month: "May",
+    travelMode: "SOLO BIKE RIDE",
+    companionship: "Solo",
+    categories: ["high-altitude"],
+    destination: "Spiti Valley",
+    region: "Himachal Pradesh",
+    route: {
+      locations: [
+        { name: "Hyderabad", coordinates: { lat: 17.3850, lng: 78.4867 }, type: "start", description: "Where the dream began" },
+        { name: "Nagpur", coordinates: { lat: 21.1458, lng: 79.0882 }, type: "waypoint", description: "450 km in 6 hours" },
+        { name: "Sagar", coordinates: { lat: 23.8388, lng: 78.7378 }, type: "waypoint", description: "Day 1 end - 930 km" },
+        { name: "Delhi", coordinates: { lat: 28.6139, lng: 77.2090 }, type: "waypoint", description: "Plan changed from Ladakh to Spiti" },
+        { name: "Shimla", coordinates: { lat: 31.1048, lng: 77.1734 }, type: "waypoint", description: "First taste of Himalayas" },
+        { name: "Narkanda", coordinates: { lat: 31.2591, lng: 77.4543 }, type: "waypoint", description: "The toughest 66 km" },
+        { name: "Sarahan", coordinates: { lat: 31.5080, lng: 77.7932 }, type: "waypoint", description: "Bhima Kali Temple" },
+        { name: "Nako", coordinates: { lat: 31.8768, lng: 78.6318 }, type: "waypoint", description: "First rockfall experience" },
+        { name: "Kaza", coordinates: { lat: 32.2265, lng: 78.0716 }, type: "highlight", description: "Heart of Spiti - 3,800m" },
+        { name: "Komic", coordinates: { lat: 32.3856, lng: 78.0290 }, type: "highlight", description: "One of highest villages - 4,587m" },
+        { name: "Hikkim", coordinates: { lat: 32.3711, lng: 78.0367 }, type: "highlight", description: "World's highest post office - 4,400m" },
+        { name: "Key Monastery", coordinates: { lat: 32.2971, lng: 78.0127 }, type: "highlight", description: "Time with the lamas" },
+        { name: "Kunzum Pass", coordinates: { lat: 32.4078, lng: 77.6028 }, type: "highlight", description: "4,551m - The gateway" },
+        { name: "Manali", coordinates: { lat: 32.2432, lng: 77.1892 }, type: "waypoint", description: "Recovery and reflection" },
+        { name: "Delhi", coordinates: { lat: 28.6139, lng: 77.2090 }, type: "end", description: "Bike parcelled, flew home" },
+      ],
+      totalDistance: 2950,
+      totalDays: 14,
+      maxElevation: 4587,
+      minElevation: 216,
+      terrainDifficulty: "extreme",
+    },
+    heroImage: "/images/journeys/spiti-2023/hero.jpg",
+    thumbnailImage: "/images/journeys/spiti-2023/thumb.jpg",
+    galleryImages: [
+      "/images/journeys/spiti-2023/gallery-1.jpg",
+      "/images/journeys/spiti-2023/gallery-2.jpg",
+      "/images/journeys/spiti-2023/gallery-3.jpg",
+      "/images/journeys/spiti-2023/gallery-4.jpg",
+    ],
+    tagline: "2,950 kilometers on an orange Interceptor 650. The dream was Ladakh, but the mountains had other plans.",
+    introduction:
+      "I used to watch moto vlogging videos on YouTube and dream about a solo Himalayan ride on my own Royal Enfield Interceptor 650 — that beautiful orange machine. When I started earning and working, the financial freedom finally came. The dream was Ladakh. I planned everything, rode from Hyderabad to Delhi — 1,580 km in just two days. And then Delhi told me the road to Ladakh wasn't open yet. The mountains had closed one door, but opened another. Spiti Valley it was. What followed was 14 days of rain, rockfalls, broken phone, broken bike stand, frozen fingers, a fall on one of the world's deadliest roads — and moments so beautiful that I still close my eyes and see them.",
+    whyIWent:
+      "Every rider who watches those YouTube videos dreams of the Himalayas. The winding roads, the high passes, the thin air, the solitude. I had the bike, I finally had the money, and I had two weeks. The plan was simple: ride solo to Ladakh. The universe had different plans — but Spiti turned out to be exactly what I needed. Sometimes the detour is the destination.",
+    transformation: {
+      before: {
+        mindset: "Excited but filled with self-doubt. Till the last moment before starting the bike, I was in a dilemma — should I do this? Will everything be alright? Will the bike hold up? These questions kept arising. But I tied my bag to the bike and just started.",
+        expectations: [
+          "To finally live the Himalayan motorcycle dream",
+          "To test my limits as a solo rider",
+          "To see Ladakh — the land of high passes",
+          "To prove to myself that I could do this alone",
+        ],
+        fears: [
+          "Bike breakdown in remote areas with no help",
+          "Weather — I was completely unprepared for rain and cold",
+          "Riding alone through dangerous mountain roads",
+          "Altitude sickness at 4,000+ meters",
+        ],
+      },
+      after: {
+        changes: [
+          "Discovered that plans can change and it can still be perfect",
+          "Learned that money can buy comfort, and there's no shame in that — after riding in rain and cold, a wooden floor hotel room with hot water felt like heaven",
+          "Built resilience I didn't know I had — rode 930 km on day 1, fell on one of the deadliest roads and got back up",
+          "Learned to trust strangers — the mobile repair shop owner in Sarahan, the Punjabi group who offered Maggi, the Kannadiga near Atal Tunnel",
+        ],
+        perspectives: [
+          "Sometimes the road blocks your plan to show you something better",
+          "Solo travel forces you to solve problems you'd otherwise avoid",
+          "The Himalayas don't care about your Instagram timeline — they demand respect",
+          "Discomfort is temporary, the memories are permanent",
+        ],
+        whatStayed: [
+          "The first ray of sun hitting my face after the sick night in Narkanda — the greatest medicine",
+          "The green vanishing at the Sutlej-Spiti confluence, replaced by the stark brown Himalayan landscape",
+          "Spending evening with the young lamas at Key Monastery",
+          "Posting letters from the world's highest post office to family",
+          "The Kannadiga stranger near Atal Tunnel who spotted my KA number plate and started speaking in Kannada",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "The Fall on Kaza-Manali Road",
+      description:
+        "Kaza to Manali — just 180-200 km, but it takes 10 hours. They call it one of the deadliest roads in the world, and now I know why. Snow walls on the sides, rocks on the road, rivers flowing across your path, water crossings that test every nerve. I was riding carefully, but the road had other plans. I fell. The bike went down, I went down. For a moment, everything stopped. But I was geared up properly — no damage to me. The bike's side stand broke. I sat there, catching my breath, looking at the mountains that had just humbled me. Made an adjustment with a rope, tied up the stand, and started again toward Manali. That fall taught me more about myself than a hundred successful rides ever could.",
+      type: "chaos",
+      quote: "The road doesn't care about your plans. It only cares if you get back up.",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2023-05-28",
+        title: "The Dream Begins — Hyderabad to Sagar",
+        location: "Sagar, Madhya Pradesh",
+        distance: 930,
+        elevation: 520,
+        mood: "euphoric",
+        summary: "Started at 6 AM from Hyderabad. Didn't sleep the previous night due to excitement. Till the last moment, doubt lingered — should I do this? Will everything be fine? I just tied my bag to the orange Interceptor and started. Reached Nagpur by 12 PM — 450+ km in 6 hours. The excitement was still pumping. Had lunch near the bypass and pushed toward Sagar, reaching by 8 PM. 930 km on Day 1. The dream had begun.",
+        highlights: [
+          "930 km in a single day — personal record",
+          "Crossed Maharashtra and entered Madhya Pradesh",
+          "The excitement overpowered all doubts",
+        ],
+        weather: "Hot and humid",
+        food: ["Highway dhaba lunch"],
+        journalEntry: "930 km done. Body is tired but mind is racing. Can't believe I actually started. The Interceptor is purring beautifully. Tomorrow, Delhi.",
+      },
+      {
+        day: 2,
+        date: "2023-05-29",
+        title: "Pushing Through — Sagar to Delhi",
+        location: "Delhi",
+        distance: 650,
+        elevation: 216,
+        mood: "content",
+        summary: "Classic street breakfast in Sagar — poha and kachori. Started the engine and pointed it toward Delhi. The highways of MP and UP are arrow-straight — nothing to think about except road, gear, brakes, clutch, and acceleration. Heavy crosswinds troubled me — even the 650cc struggled at times. Crossed MP, UP, and a small part of Rajasthan. Reached Delhi by 8 PM. 650+ km done. Total: 1,580 km in 2 days.",
+        highlights: [
+          "Crossed three states in one day",
+          "Heavy crosswinds tested the riding skills",
+          "1,580 km total in just 2 days",
+        ],
+        weather: "Hot, strong crosswinds",
+        food: ["Poha", "Kachori"],
+        journalEntry: "The straight highways are meditative. Just you, the road, and the rhythm of the engine. Delhi reached. Tomorrow I rest and plan.",
+      },
+      {
+        day: 3,
+        date: "2023-05-30",
+        title: "The Plan Changes — Rest Day in Delhi",
+        location: "Paharganj, Delhi",
+        distance: 0,
+        elevation: 216,
+        mood: "neutral",
+        summary: "Stayed in a hotel near Paharganj, close to New Delhi Railway Station. This was the day everything changed. Found out that the road to Ladakh wasn't open yet. The dream destination was blocked. Sat in my room, disappointed at first, then started researching alternatives. Spiti Valley emerged as the answer. Also realized I couldn't ride the bike all the way back to Hyderabad after the trip — decided to parcel it via Agarwal Packers and Movers and book a return flight instead. Sometimes the best plans are the ones you make on the fly.",
+        highlights: [
+          "Discovered Ladakh road was closed",
+          "Replanned entire trip to Spiti Valley",
+          "Decided to parcel bike and fly back",
+        ],
+        journalEntry: "Ladakh said no. But Spiti said yes. The mountains always have a plan. Let's see where this road takes me.",
+      },
+      {
+        day: 4,
+        date: "2023-05-31",
+        title: "Into the Mountains — Delhi to Shimla",
+        location: "Shimla, Himachal Pradesh",
+        distance: 350,
+        elevation: 2276,
+        mood: "euphoric",
+        summary: "Finally entering Himachal Pradesh — the destination state. Escaping Delhi took almost 2 hours, then the Delhi-Chandigarh highway opened up — excellent for high-speed cruising. Crossed Punjab and Haryana, entered HP. The lower hills started appearing, altitude increasing, temperature dropping. Completely unprepared for rain and cold. Stopped for a tea break near Shimla where I met a Punjabi group who offered Maggi and alcohol. Declined the alcohol — solo rider needs clear head. Heavy rain by the time I reached Shimla. Found a hotel room for ₹5,000 for 2 nights. That wooden floor, that hot water — I realized that we earn money to spend on comfort. After such an adventurous ride in rain and cold, that room felt like heaven.",
+        highlights: [
+          "Delhi-Chandigarh highway cruise",
+          "First glimpse of Himalayan foothills",
+          "Met friendly Punjabi group",
+          "Learned the value of comfort after struggle",
+        ],
+        weather: "Heavy rain, cold",
+        food: ["Maggi (offered by Punjabi group)", "Tea"],
+        peoplemet: ["Punjabi tourists who shared their Maggi"],
+        journalEntry: "Soaked to the bone but smiling. The mountains welcomed me with rain. That hotel room — wooden floors, hot water — I've never appreciated simple things more. Money can buy comfort. And that's okay.",
+      },
+      {
+        day: 5,
+        date: "2023-06-01",
+        title: "Shimla Rest Day — Repairs and Exploration",
+        location: "Shimla, Himachal Pradesh",
+        distance: 20,
+        elevation: 2276,
+        mood: "content",
+        summary: "Explored Shimla town. Visited the Hanuman Temple at the top of the town — beautiful views of the valley. The bike needed attention — chain was loose, steering felt off, brake pads worn. Found a Royal Enfield showroom and got everything fixed. Made friends with the mechanics there. Also walked the famous Mall Road. A day of rest, repairs, and preparation for the harder days ahead.",
+        highlights: [
+          "Hanuman Temple visit",
+          "Bike servicing — chain, steering, brake pads",
+          "Made friends at RE showroom",
+          "Mall Road evening walk",
+        ],
+        food: ["Local Himachali food"],
+        peoplemet: ["RE showroom mechanics"],
+        journalEntry: "The bike is ready. I am ready. Tomorrow the real Himalayan adventure begins. Narkanda awaits.",
+      },
+      {
+        day: 6,
+        date: "2023-06-02",
+        title: "The Hardest 66 Kilometers — Shimla to Narkanda",
+        location: "Narkanda, Himachal Pradesh",
+        distance: 66,
+        elevation: 2708,
+        mood: "struggling",
+        summary: "Just 66 km. Should have been easy. It became one of the toughest days of the entire trip. Heavy rain, no proper rain gear, no winter gear. I was cold, wet, and developing a fever. Every kilometer was a battle. The mountain roads were slippery, visibility poor. It took me almost 5 hours to cover 66 km. When I finally reached Narkanda, I just checked into the first room I found and didn't step outside till the next morning. My body was shivering, head was pounding. But even through the struggle, the roadside views — the apple orchards, the pine forests — reminded me why I was here. The mountains were testing me.",
+        highlights: [
+          "The 66 km that took 5 hours",
+          "First experience of mountain rain riding",
+          "Apple plantations along the road",
+          "Learned the hard way about proper gear",
+        ],
+        weather: "Heavy rain, cold, poor visibility",
+        journalEntry: "66 km. 5 hours. Fever. But I made it. Tomorrow I need sun. I need warmth. The mountains are testing me. I will not fail.",
+      },
+      {
+        day: 7,
+        date: "2023-06-03",
+        title: "Resurrection — Narkanda to Sarahan",
+        location: "Sarahan, Himachal Pradesh",
+        distance: 105,
+        elevation: 2165,
+        mood: "content",
+        summary: "Woke up and saw a ray of sun falling directly on me through the window. That sunlight was the greatest treatment I needed at that moment. Felt energy returning. Dried all my wet gear in the sun. Visited nearby Hatu Peak (10-15 km detour) — stunning views. Then started toward Sarahan, slightly off the main Indo-Tibetan Highway. Beautiful village, but disaster struck — both my mobile phones got damaged from the rain and weren't working. In a remote village with no phone access, my mind went blank. But then I remembered — there's a famous temple here, Bhima Kali Temple. Stopped worrying about the phones, visited the temple, found peace. Later had momos at a small restaurant and started searching for a mobile repair shop. Luckily found one. The shop owner understood my situation, tried to fix both phones. One started working, other didn't. Decided to buy a new phone there for emergencies. The kindness of strangers in remote places — unforgettable.",
+        highlights: [
+          "The healing ray of morning sun",
+          "Hatu Peak visit",
+          "Bhima Kali Temple peace",
+          "Both phones damaged — crisis mode",
+          "Found a repair shop and human kindness",
+        ],
+        weather: "Clear morning, cloudy afternoon",
+        food: ["Momos"],
+        peoplemet: ["Mobile repair shop owner who saved the trip"],
+        journalEntry: "The sun healed me. The temple calmed me. A stranger fixed my phone. The mountains take, but they also give. Sarahan will stay with me.",
+      },
+      {
+        day: 8,
+        date: "2023-06-04",
+        title: "Into the Core — Sarahan to Nako",
+        location: "Nako, Himachal Pradesh",
+        distance: 160,
+        elevation: 3662,
+        mood: "euphoric",
+        summary: "Morning started with hot parathas made by an aunty near my hotel. Then began the journey into the core Himalayan landscape. Rode alongside the mighty Sutlej River — always there beside the road, a constant companion. Then a new fear unlocked: ROCKFALL. A huge rock fell right in front of me while I was riding at 60 km/h. Heart stopped for a moment. These mountains are alive and unpredictable. Reached the confluence where Spiti River joins Sutlej — and suddenly, everything changed. The greenery vanished. The stark, brown, massive Himalayan mountains appeared. This is where the real Spiti begins. Reached Nako village in the evening — small, beautiful, otherworldly.",
+        highlights: [
+          "First rockfall experience — reality check",
+          "Sutlej-Spiti confluence — landscape transformation",
+          "Greenery to barren mountains transition",
+          "Nako village arrival",
+        ],
+        weather: "Clear, getting colder",
+        food: ["Hot parathas (made by local aunty)"],
+        peoplemet: ["Paratha aunty"],
+        journalEntry: "A rock fell in front of me. I could have been under it. The Himalayas reminded me who is in charge here. But then the landscape changed, and I forgot everything else. This is what I came for.",
+      },
+      {
+        day: 9,
+        date: "2023-06-05",
+        title: "Heart of Spiti — Nako to Kaza",
+        location: "Kaza, Himachal Pradesh",
+        distance: 110,
+        elevation: 3800,
+        mood: "euphoric",
+        summary: "Visited Nako Lake in the morning — serene, still, reflecting the mountains. Had breakfast and started toward Kaza, the main town in Spiti Valley. On the way, stopped at the Gue Mummy Monastery — a 500-year-old naturally preserved mummy of a Tibetan monk. The history, the spirituality, the remoteness — all overwhelming. Reached Kaza in the evening, booked a hotel for 2 nights. Explored the Kaza marketplace — small, colorful, full of character. The thin air was noticeable now. Every breath felt deliberate.",
+        highlights: [
+          "Nako Lake morning visit",
+          "Gue Mummy Monastery — 500-year-old preserved monk",
+          "Arrival in Kaza — heart of Spiti",
+          "First experience of thin air",
+        ],
+        weather: "Clear, cold",
+        food: ["Local breakfast"],
+        journalEntry: "Kaza. I'm finally here. The air is thin, the sky is clear, the mountains are giants. Tomorrow I explore the villages of Spiti. This is the dream.",
+      },
+      {
+        day: 10,
+        date: "2023-06-06",
+        title: "Villages in the Sky — Exploring Spiti",
+        location: "Komic, Hikkim, Kibber, Key Monastery",
+        distance: 100,
+        elevation: 4587,
+        mood: "euphoric",
+        summary: "The day I'll remember forever. Visited Komic — one of the highest inhabited villages in the world at 4,587m. The air was thin, but the views were endless. Then Langza — home to a massive Buddha statue overlooking the valley. Hikkim — the world's highest post office at 4,400m. I posted letters to my family from there. Kibber — another high-altitude village with traditional mud houses. Chicham Bridge — one of the highest bridges in Asia. And finally, the crown jewel: Key Monastery. Spent the evening with the young lamas and students there. Their simple life, their devotion, their smiles — it put everything in perspective.",
+        highlights: [
+          "Komic — 4,587m, one of world's highest villages",
+          "Langza Buddha statue",
+          "Hikkim — posted letters from world's highest post office",
+          "Kibber village",
+          "Chicham Bridge",
+          "Key Monastery — evening with the lamas",
+        ],
+        weather: "Clear, very cold",
+        peoplemet: ["Young lamas and students at Key Monastery"],
+        journalEntry: "Posted letters from 4,400m to my family. Sat with monks at Key Monastery. This is why I came. Not for Instagram, not for validation. For this. These moments.",
+      },
+      {
+        day: 11,
+        date: "2023-06-07",
+        title: "The Deadliest Road — Kaza to Manali",
+        location: "Manali, Himachal Pradesh",
+        distance: 200,
+        elevation: 4551,
+        mood: "struggling",
+        summary: "Just 180-200 km. But this road — Kaza to Manali — is legendary for a reason. It takes 10 hours. Every rider who enjoys off-roading gets their adrenaline rush here. Crossed Kunzum Pass at 4,551m — snow walls on both sides, prayer flags fluttering. Then the road got worse. Rocks everywhere. River flowing ON the road, not beside it. Massive water crossings. I fell. The bike went down, I went down. Properly geared up, so no injury. But my side stand broke. Sat there, caught my breath, made an adjustment with rope to tie the stand. Started again. Near Atal Tunnel, a stranger saw my Karnataka (KA) number plate and started talking in Kannada. We exchanged Instagram, connected. Found RE showroom in Manali, fixed the stand. Took a hotel room. The hardest day was over. I had survived.",
+        highlights: [
+          "Kunzum Pass — 4,551m crossing",
+          "Snow walls beside the road",
+          "Multiple water crossings",
+          "THE FALL — and getting back up",
+          "Met a Kannadiga stranger near Atal Tunnel",
+          "Fixed bike stand in Manali",
+        ],
+        weather: "Variable — sun, snow, rain",
+        peoplemet: ["Kannadiga traveler who spotted KA number plate"],
+        journalEntry: "I fell today. On one of the world's deadliest roads. But I got up. The bike stand broke, but I fixed it. The mountains tested me, and I passed. Manali never looked more beautiful.",
+      },
+      {
+        day: 12,
+        date: "2023-06-08",
+        title: "Recovery in Manali — Day 1",
+        location: "Manali, Himachal Pradesh",
+        distance: 20,
+        elevation: 2050,
+        mood: "content",
+        summary: "Rest day in Manali. The body needed it after yesterday. Explored local temples, walked around the town, ate good food. The contrast between Spiti's barren landscape and Manali's lush green was striking. Let the mind process everything that had happened.",
+        highlights: [
+          "Rest and recovery",
+          "Local temple visits",
+          "Processing the Spiti experience",
+        ],
+        weather: "Pleasant, cloudy",
+      },
+      {
+        day: 13,
+        date: "2023-06-09",
+        title: "Recovery in Manali — Day 2",
+        location: "Manali, Himachal Pradesh",
+        distance: 15,
+        elevation: 2050,
+        mood: "content",
+        summary: "Another day of rest and exploration. Visited more temples, enjoyed the mountain air. Started mentally preparing for the return journey. The adventure was coming to an end, but the transformation was complete.",
+        highlights: [
+          "Temple visits",
+          "Mountain air relaxation",
+          "Mental preparation for return",
+        ],
+        weather: "Clear, pleasant",
+      },
+      {
+        day: 14,
+        date: "2023-06-10",
+        title: "The Return — Manali to Delhi",
+        location: "Delhi",
+        distance: 540,
+        elevation: 216,
+        mood: "content",
+        summary: "Started the descent from Manali to Delhi. As altitude decreased and temperature increased, something strange happened — I started having breathing problems. The significant change in weather and altitude hit hard. Took many breaks on the Chandigarh-Delhi stretch. Finally made it to the hotel in Delhi. Next day: parcel the bike. Day after: fly home to Hyderabad. The solo Himalayan dream was complete — just not the way I had planned it.",
+        highlights: [
+          "Descent from mountains",
+          "Altitude adjustment breathing issues",
+          "Final stretch to Delhi",
+          "Journey complete",
+        ],
+        weather: "Hot as altitude decreased",
+        journalEntry: "The mountains are behind me now. But they're inside me too. Ladakh will wait for another time. Spiti was perfect. The detour was the destination.",
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/spiti-2023/moment-kunzum.jpg",
+        caption: "Kunzum Pass — 4,551m. The orange Interceptor and I at the gateway of Spiti. Prayer flags dancing in the thin air. This is what every rider dreams of.",
+        location: "Kunzum Pass",
+        timestamp: "Day 11",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/spiti-2023/moment-kunzum-me.jpg",
+        caption: "Standing at Kunzum Pass. 4,551 meters above sea level. The air is thin, the sky is endless, and for a moment, nothing else matters.",
+        location: "Kunzum Pass",
+        timestamp: "Day 11",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/spiti-2023/moment-hikkim.jpg",
+        caption: "World's highest post office at 4,400m. Posted letters to family from here. Somewhere, those letters are still finding their way home.",
+        location: "Hikkim",
+        timestamp: "Day 10",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/spiti-2023/moment-langza.jpg",
+        caption: "The giant Buddha statue overlooking Langza village. At 4,400m, he watches over the valley in eternal meditation. The scale of these mountains makes even giants look small.",
+        location: "Langza",
+        timestamp: "Day 10",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/spiti-2023/moment-spitiriver.jpg",
+        caption: "The Spiti River carving its way through the valley. This is where the greenery ends and the stark brown Himalayan giants begin. The real Spiti starts here.",
+        location: "Spiti Valley",
+        timestamp: "Day 8",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/spiti-2023/moment-kazaroad1.jpg",
+        caption: "Kaza-Manali road — 200 km that takes 10 hours. Water crossings, rock falls, broken roads. This is where the Himalayas test your resolve. I fell here, got up, and kept riding.",
+        location: "Kaza-Manali Road",
+        timestamp: "Day 11",
+      },
+      {
+        id: "moment-7",
+        image: "/images/journeys/spiti-2023/moment-kazaroad2.jpg",
+        caption: "Another stretch of the deadliest road. Rivers flowing ON the road, not beside it. Every meter earned, nothing given for free.",
+        location: "Kaza-Manali Road",
+        timestamp: "Day 11",
+      },
+      {
+        id: "moment-8",
+        image: "/images/journeys/spiti-2023/moment-bhimakali.jpg",
+        caption: "Bhima Kali Temple in Sarahan. The day both my phones died, I stopped worrying and walked to this ancient temple. Found peace when everything else was falling apart.",
+        location: "Sarahan",
+        timestamp: "Day 7",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "When one road closes, another opens. Ladakh said no, Spiti said yes. The detour became the destination. Always have a Plan B.",
+        category: "travel",
+      },
+      {
+        id: "learning-2",
+        insight: "Money can buy comfort, and there's no shame in that. After riding in rain and cold, that ₹5,000 hotel room with wooden floors and hot water felt like heaven. We earn money to spend on moments like these.",
+        category: "life",
+      },
+      {
+        id: "learning-3",
+        insight: "Proper gear is not optional in the mountains. I learned this the hard way on Day 6 — no rain gear, no winter gear, 66 km that took 5 hours and gave me fever. The mountains don't care about your bravado.",
+        category: "travel",
+      },
+      {
+        id: "learning-4",
+        insight: "Strangers in remote places can save your trip. The Punjabi group with Maggi, the mobile repair shop owner in Sarahan, the Kannadiga near Atal Tunnel — humanity shines brightest in isolation.",
+        category: "people",
+      },
+      {
+        id: "learning-5",
+        insight: "Falling doesn't mean failing. I fell on one of the deadliest roads. The stand broke. I got up, tied it with rope, and kept going. The only failure is not getting back up.",
+        category: "self",
+      },
+      {
+        id: "learning-6",
+        insight: "The Himalayas are alive. That rockfall in front of me at 60 km/h was a reminder — these mountains can give you the best views of your life or take your life. Respect is mandatory.",
+        category: "nature",
+      },
+    ],
+    ambientAudio: {
+      enabled: true,
+      track: "/audio/spiti-wind.mp3",
+      description: "Wind through the valley, distant prayer bells, motorcycle engine echoes",
+    },
+    impact: {
+      physical: 95,
+      emotional: 85,
+      spiritual: 75,
+      chaos: 70,
+    },
+    readingTime: 20,
+    featured: true,
+    published: true,
+    lastUpdated: "2024-01-15",
+  },
+
+  // ============================================
+  // 2024 - BANARAS (RETURN)
+  // ============================================
+  {
+    id: "banaras-2024",
+    slug: "banaras-2024",
+    title: "Banaras",
+    subtitle: "The city that keeps calling",
+    date: "2024-04",
+    year: 2024,
+    month: "April",
+    travelMode: "Flight",
+    companionship: "Solo / Mixed",
+    categories: ["spiritual", "cultural"],
+    destination: "Varanasi",
+    region: "Uttar Pradesh",
+    heroImage: "/images/journeys/banaras-2024/hero.jpg",
+    thumbnailImage: "/images/journeys/banaras-2024/thumb.jpg",
+    galleryImages: [],
+    tagline: "Returning to where time stands still.",
+    introduction:
+      "Placeholder: Write about returning to Banaras. What's different this time? What remains unchanged? The familiarity and the surprise.",
+    whyIWent:
+      "Placeholder: Why did you return? What unfinished business? What new questions?",
+    transformation: {
+      before: {
+        mindset: "Placeholder: How you approached the return",
+        expectations: ["Placeholder: Different expectations from the first visit"],
+        fears: ["Placeholder: Fear that it won't feel the same?"],
+      },
+      after: {
+        changes: ["Placeholder: Deeper understanding from the return"],
+        perspectives: ["Placeholder: What you see now that you missed before"],
+        whatStayed: ["Placeholder: The eternal Ganga"],
+      },
+    },
+    peakExperience: {
+      title: "Placeholder: The Second Return",
+      description: "Placeholder: A different kind of peak experience on the return visit",
+      type: "devotion",
+    },
+    timeline: [],
+    moments: [],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Placeholder: What returning taught you",
+        category: "spiritual",
+      },
+    ],
+    impact: {
+      physical: 20,
+      emotional: 80,
+      spiritual: 90,
+      chaos: 50,
+    },
+    readingTime: 8,
+    featured: false,
+    published: true,
+    lastUpdated: "2024-05-01",
+  },
+
+  // ============================================
+  // 2024 - LADAKH (SOLO BIKE RIDE)
+  // The Unfinished Dream Finally Accomplished
+  // ============================================
+  {
+    id: "ladakh-2024",
+    slug: "ladakh-2024",
+    title: "Ladakh",
+    subtitle: "The unfinished dream from 2023, finally accomplished",
+    date: "2024-06",
+    year: 2024,
+    month: "June",
+    travelMode: "SOLO BIKE RIDE",
+    companionship: "Mixed",
+    categories: ["high-altitude"],
+    destination: "Ladakh",
+    region: "Ladakh & Zanskar",
+    route: {
+      locations: [
+        { name: "Gurgaon", coordinates: { lat: 28.4595, lng: 77.0266 }, type: "start", description: "Bike parcelled here" },
+        { name: "Mandi", coordinates: { lat: 31.7088, lng: 76.9320 }, type: "waypoint", description: "Day 1 stop" },
+        { name: "Manali", coordinates: { lat: 32.2432, lng: 77.1892 }, type: "waypoint", description: "Bike checkup" },
+        { name: "Jispa", coordinates: { lat: 32.6167, lng: 77.1667 }, type: "waypoint", description: "Acclimatization" },
+        { name: "Shinkula Pass", coordinates: { lat: 32.7500, lng: 77.3333 }, type: "highlight", description: "5,091m - Gateway to Zanskar" },
+        { name: "Purne", coordinates: { lat: 33.2500, lng: 76.9167 }, type: "waypoint", description: "Zanskar homestay" },
+        { name: "Phukthal Monastery", coordinates: { lat: 33.2333, lng: 76.9500 }, type: "highlight", description: "Cave monastery trek" },
+        { name: "Padum", coordinates: { lat: 33.4667, lng: 76.8833 }, type: "waypoint", description: "Zanskar capital" },
+        { name: "Singe La Pass", coordinates: { lat: 33.6833, lng: 77.2000 }, type: "highlight", description: "5,060m" },
+        { name: "Sirsir La Pass", coordinates: { lat: 33.8333, lng: 77.3333 }, type: "highlight", description: "4,825m" },
+        { name: "Leh", coordinates: { lat: 34.1526, lng: 77.5771 }, type: "highlight", description: "Heart of Ladakh" },
+        { name: "Chang La Pass", coordinates: { lat: 34.0167, lng: 77.9667 }, type: "waypoint", description: "5,360m" },
+        { name: "Pangong Tso", coordinates: { lat: 33.7595, lng: 78.6842 }, type: "highlight", description: "The endless blue" },
+        { name: "Hanle", coordinates: { lat: 32.7833, lng: 78.9833 }, type: "highlight", description: "Changtang region" },
+        { name: "Umling La", coordinates: { lat: 32.7656, lng: 78.9875 }, type: "highlight", description: "5,799m - World's highest motorable road" },
+        { name: "Tso Moriri", coordinates: { lat: 32.9833, lng: 78.3167 }, type: "highlight", description: "Sacred high-altitude lake" },
+        { name: "Baralacha La", coordinates: { lat: 32.7458, lng: 77.4247 }, type: "waypoint", description: "4,890m" },
+        { name: "Kasol", coordinates: { lat: 32.0167, lng: 77.3167 }, type: "waypoint", description: "Parvati Valley" },
+        { name: "Gurgaon", coordinates: { lat: 28.4595, lng: 77.0266 }, type: "end", description: "Journey complete" },
+      ],
+      totalDistance: 2800,
+      totalDays: 16,
+      maxElevation: 5799,
+      minElevation: 216,
+      terrainDifficulty: "extreme",
+    },
+    heroImage: "/images/journeys/ladakh-2024/hero.jpg",
+    thumbnailImage: "/images/journeys/ladakh-2024/thumb.jpg",
+    galleryImages: [],
+    tagline: "2,800 kilometers through Zanskar and Ladakh. Standing at 5,799m — the world's highest motorable road.",
+    introduction:
+      "The 2023 Spiti trip had planted a seed that grew into an addiction. The mountains had gotten into my blood, and the unfinished business with Ladakh kept calling. This time, I planned smarter — parcelled the bike from Hyderabad to Gurgaon and back, no 930 km single-day rides. A colleague heard about my plans and wanted to join. I briefed him on the itinerary, he agreed, and we began execution. What followed was 16 days through Zanskar Valley, the remotest corners of Ladakh, and finally standing at Umling La — 5,799 meters — the world's highest motorable road. The dream that was blocked in 2023 was finally accomplished.",
+    whyIWent:
+      "Ladakh was always the dream. In 2023, the roads were closed and Spiti became my detour. But Ladakh remained unfinished business. The impact of Spiti had made me addicted to the mountains — the thin air, the vast emptiness, the feeling of being small against something ancient. This time, I wasn't just going to Ladakh; I was going to conquer Umling La, the world's highest motorable road. Some dreams don't let you sleep until you accomplish them.",
+    transformation: {
+      before: {
+        mindset: "Confident from the Spiti experience but aware of my fitness limitations. I had gained weight and wasn't in the best shape. The heat of the plains and the altitude of the mountains would both test me differently.",
+        expectations: [
+          "To finally see Pangong Lake and its impossible blue",
+          "To reach Umling La — 5,799m — and feel the achievement",
+          "To explore Zanskar Valley via the legendary Shinkula Pass",
+          "To test myself against the world's highest roads",
+        ],
+        fears: [
+          "Physical fitness — I was overweight and dehydrated easily",
+          "Altitude sickness in the Changtang region",
+          "Mechanical breakdown in the most remote areas",
+          "The legendary difficulty of Zanskar roads",
+        ],
+      },
+      after: {
+        changes: [
+          "Learned that acclimatization is not optional — it's mandatory for survival",
+          "Discovered that the body can push beyond what the mind thinks possible (Phukthal trek)",
+          "Realized that proper planning (parcelling bike, pacing days) makes adventures sustainable",
+          "Found that sharing the journey with a companion adds a different dimension to solo riding",
+        ],
+        perspectives: [
+          "The Zanskar route is perhaps more beautiful than the mainstream Ladakh circuit",
+          "At extreme altitudes, every breath is earned, every kilometer is a victory",
+          "Breakdown and delays are part of the adventure, not obstacles to it",
+          "The highest point isn't always the peak experience — sometimes it's a plate of rajma-rice at a monastery",
+        ],
+        whatStayed: [
+          "The first glimpse of Pangong Lake — that blue that photographs can't capture",
+          "Standing at Umling La, 5,799m, knowing I'd reached the top of the motorable world",
+          "The Israeli backpacker at Purne carrying 25kg on his back through the Himalayas",
+          "The RE mechanic in Sundernagar who understood my urgency and got me home",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "Standing at Umling La — 5,799m",
+      description:
+        "The road to Umling La has countless hairpin bends. Each turn, I was more exhausted than the last. The thin air made every movement deliberate. But when I finally reached the top — 5,799 meters, 19,024 feet — something shifted inside. This is the world's highest motorable road. Not a trek, not a climb — I rode here on my orange Interceptor. There's a special feeling of achievement that comes from doing something beyond the daily routine of life. Standing there, looking at the endless brown mountains, I felt proud. Not arrogant, just... proud. The dream from 2023 was finally, completely accomplished.",
+      type: "awe",
+      quote: "Some heights are measured in meters. Some are measured in the distance between your dreams and reality.",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2024-06-01",
+        title: "The Heat Battle — Gurgaon to Mandi",
+        location: "Mandi, Himachal Pradesh",
+        distance: 450,
+        elevation: 760,
+        mood: "struggling",
+        summary: "Checked the bike in the morning — the handlebar was slightly misaligned. No mechanic shops open that early, so started anyway. The Delhi heat hit hard. I was overweight and my fitness level was low. Dehydration became a constant companion. Took many breaks on the Delhi-Chandigarh highway, which delayed progress. Changed the destination from Manali to Mandi. Sometimes you have to listen to your body.",
+        highlights: [
+          "Bike handlebar issue — started anyway",
+          "Heat and dehydration struggle",
+          "Changed plans — Mandi instead of Manali",
+          "First lesson in pacing",
+        ],
+        weather: "Hot, 40°C+ in plains",
+        journalEntry: "The heat is brutal. My body is not in the shape I thought it was. But I'm here, I'm moving. Mandi tonight, Manali tomorrow.",
+      },
+      {
+        day: 2,
+        date: "2024-06-02",
+        title: "Into the Mountains — Mandi to Jispa",
+        location: "Jispa, Himachal Pradesh",
+        distance: 200,
+        elevation: 3200,
+        mood: "content",
+        summary: "Got the bike checked in Manali — fixed the handlebar, general checkup before entering remote Himalayan terrain. Crossed through Atal Tunnel, enjoying the scenic beauty. Met some riding groups who advised against crossing Shinkula Pass without proper acclimatization. Wisdom accepted — stopped at Jispa for the night. During a tea break, made a friend who offered some... Himachali specialties. Declined the smoke, accepted the friendship.",
+        highlights: [
+          "Bike checkup in Manali — handlebar fixed",
+          "Atal Tunnel crossing",
+          "Met riding groups — got Shinkula advice",
+          "Jispa for acclimatization",
+          "New friend with Himachali offerings",
+        ],
+        weather: "Pleasant, cooling down with altitude",
+        food: ["Tea break specialties"],
+        peoplemet: ["Riding groups at lunch", "Himachali friend at tea stop"],
+        journalEntry: "The mountains are already working their magic. Temperature dropping, spirits rising. Jispa is beautiful. Tomorrow we enter Zanskar.",
+      },
+      {
+        day: 3,
+        date: "2024-06-03",
+        title: "Shinkula Pass — Gateway to Zanskar",
+        location: "Purne Village, Zanskar",
+        distance: 100,
+        elevation: 5091,
+        mood: "euphoric",
+        summary: "Rookie mistake — forgot to fill the fuel tank in Jispa. Had to buy from a general store at inflated prices. Lesson learned. Reached Darcha checkpoint and took the road to Zanskar via Shinkula Pass. The road was heaven — snow everywhere, complete whiteout conditions. Medium-level off-roading through slush and snow. Reached the pass at 5,091m, took photos, absorbed the moment. Descended to Purne village where finding a homestay was an adventure itself. Ended up sharing a room with an Israeli backpacker — former army, solo trekking through the Himalayas with a 25kg bag. Stories exchanged late into the night.",
+        highlights: [
+          "Fuel mistake — overpriced general store",
+          "Shinkula Pass at 5,091m — snow paradise",
+          "Off-roading through slush",
+          "Purne village homestay adventure",
+          "Met Israeli solo backpacker",
+        ],
+        weather: "Snow at pass, clear in valley",
+        peoplemet: ["Israeli ex-army backpacker with 25kg bag"],
+        journalEntry: "Shinkula was everything I imagined and more. Snow, silence, solitude. The Israeli guy is inspiring — 25kg on his back, walking where we ride. Different kinds of crazy, same love for mountains.",
+      },
+      {
+        day: 4,
+        date: "2024-06-04",
+        title: "The Phukthal Test — Trek to the Cave Monastery",
+        location: "Phukthal Monastery, Zanskar",
+        distance: 6,
+        elevation: 4000,
+        mood: "struggling",
+        summary: "Time to test my fitness at altitude. Trekked to Phukthal Monastery — 3km each way along the stunning Tsarap River (completely blue, unbelievable color). The Israeli friend joined us with his drone. Every step was a struggle. Not yet fully acclimatized, overweight, and now hiking at 4,000m. Reached the monastery completely exhausted. Doubted if I could make it back. Asked a horseman if he could carry me — he looked at my weight and seemed doubtful about his horse managing those narrow cliffs. Decided to eat first, think later. Rajma-rice at the monastery gave me unexpected energy. Trekked back successfully. A local who saw me leave and return was impressed — 'Now you are completely acclimatized in the Himalayas.' Best compliment of the trip.",
+        highlights: [
+          "3km trek along blue Tsarap River",
+          "Phukthal Monastery — cave monastery experience",
+          "Fitness struggle at altitude",
+          "Drone shots with Israeli friend",
+          "Rajma-rice energy miracle",
+          "Local's acclimatization approval",
+        ],
+        weather: "Clear, cold",
+        food: ["Rajma-rice at monastery — the energy savior"],
+        peoplemet: ["Horseman who doubted his horse", "Local who praised acclimatization"],
+        journalEntry: "I made it. Nearly didn't, but I made it. That rajma-rice might be the best meal I've ever had. The body can do more than the mind believes. Phukthal is a place of peace and power.",
+      },
+      {
+        day: 5,
+        date: "2024-06-05",
+        title: "The Capital of Zanskar — Purne to Padum",
+        location: "Padum, Zanskar",
+        distance: 50,
+        elevation: 3657,
+        mood: "content",
+        summary: "Short riding day from Purne to Padum — the main town in Zanskar Valley. Took a hotel, rested the body that was still recovering from yesterday's trek. Explored a nearby monastery in the evening. Found a place for bike wash — the Interceptor was caked in mud and slush from Shinkula. Closed the day early, knowing the next day would be a monster.",
+        highlights: [
+          "Arrival at Padum — Zanskar's capital",
+          "Recovery and rest",
+          "Monastery visit",
+          "Bike wash — cleaning the Shinkula evidence",
+        ],
+        weather: "Clear, pleasant",
+        journalEntry: "Padum is more developed than expected. Tomorrow is the big day — two passes, 300km, destination Leh. The body is recovering. The mind is ready.",
+      },
+      {
+        day: 6,
+        date: "2024-06-06",
+        title: "The Legendary Road — Padum to Leh",
+        location: "Leh, Ladakh",
+        distance: 300,
+        elevation: 5060,
+        mood: "euphoric",
+        summary: "The longest and most challenging day of the trip. Two passes: Singe La (5,060m) and Sirsir La (4,825m). Started early. The road had active mountain drilling — huge sharp stones everywhere. 200 meters of extremely hard off-roading. But this road — THIS ROAD — is why you come to Ladakh. The landscape is otherworldly. Continuous Himalayan chains, colors changing every few kilometers, not another soul for hours. If anyone asks me the must-visit route in Ladakh, this is it. Finally reached Leh in the evening. The hard part was over. Or so I thought.",
+        highlights: [
+          "Singe La Pass — 5,060m",
+          "Sirsir La Pass — 4,825m",
+          "200m of extreme off-roading on sharp stones",
+          "Most beautiful road in Ladakh",
+          "Arrival in Leh",
+        ],
+        weather: "Variable — all seasons in one day",
+        journalEntry: "That Padum-Leh road should be mandatory for every rider. It breaks you and rewards you in equal measure. Leh feels like civilization after Zanskar. Tonight, I sleep like the dead.",
+      },
+      {
+        day: 7,
+        date: "2024-06-07",
+        title: "Exploring Leh — South Indian Soul Food",
+        location: "Leh, Ladakh",
+        distance: 40,
+        elevation: 3500,
+        mood: "content",
+        summary: "Rest and exploration day in Leh. After days of dal-rice and momos, I was craving home food. Found a South Indian restaurant — the idli, vada, and dosa were exactly what my soul needed. Visited the iconic spots: War Memorial (emotional, humbling), Shanti Stupa (peaceful sunset views), Thiksey Monastery (mini Potala Palace), and Hall of Fame (stories of Kargil heroes). Leh is a proper town — ATMs, shops, restaurants. Enjoy the amenities while they last.",
+        highlights: [
+          "South Indian food — idli, vada, dosa",
+          "War Memorial visit",
+          "Shanti Stupa sunset",
+          "Thiksey Monastery",
+          "Hall of Fame",
+        ],
+        weather: "Clear, sunny",
+        food: ["Idli", "Vada", "Dosa — soul food"],
+        journalEntry: "Sometimes the best experiences are the simple ones. That dosa after a week of mountain food hit different. Tomorrow: Pangong. The dream.",
+      },
+      {
+        day: 8,
+        date: "2024-06-08",
+        title: "The Dream Lake — Leh to Pangong Tso",
+        location: "Pangong Tso, Ladakh",
+        distance: 160,
+        elevation: 5360,
+        mood: "euphoric",
+        summary: "Via Chang La Pass (5,360m), the road wound through increasingly barren landscape. And then — Pangong. The first glimpse of that blue is something no photograph can prepare you for. It's not just blue; it's every shade of blue that exists, changing with the light, stretching to the horizon where it meets the brown mountains. Spent the rest of the day just... being. Watching the colors change. Taking it in. Spent the night at the lake. Some moments need time, not documentation.",
+        highlights: [
+          "Chang La Pass — 5,360m",
+          "First glimpse of Pangong Lake",
+          "The blue that breaks your brain",
+          "Night at the lake",
+        ],
+        weather: "Clear, cold night",
+        journalEntry: "Pangong is real. I'm here. The blue is everything they said and more. Tonight I sleep beside the dream.",
+      },
+      {
+        day: 9,
+        date: "2024-06-09",
+        title: "Into Changtang — Pangong to Hanle",
+        location: "Hanle, Ladakh",
+        distance: 270,
+        elevation: 4500,
+        mood: "content",
+        summary: "Left Pangong and headed toward the remote Changtang region. The road was rough, but the landscape — the Changtang plateau — has its own severe beauty. Reached Loma Bridge, the turn toward Hanle. Fuel management became critical — rode to Nyoma to fill up, then backtracked to Hanle. The remoteness here is different from Zanskar. Zanskar feels wild; Changtang feels alien. Hanle is home to one of the world's highest astronomical observatories. The stars here are something else.",
+        highlights: [
+          "Changtang plateau landscape",
+          "Fuel management — Nyoma detour",
+          "Loma Bridge junction",
+          "Hanle arrival",
+          "Star-gazing territory",
+        ],
+        weather: "Clear, very cold",
+        journalEntry: "Changtang is Mars on Earth. Brown, barren, beautiful in a way that makes you uncomfortable. Tomorrow: Umling La. The highest.",
+      },
+      {
+        day: 10,
+        date: "2024-06-10",
+        title: "The Highest Road in the World — Umling La Pass",
+        location: "Umling La Pass & Hanle",
+        distance: 130,
+        elevation: 5799,
+        mood: "euphoric",
+        summary: "The day I'd been waiting for. Started toward Umling La via Photi La Pass (5,550m). The road has too many hairpin bends to count. Each one exhausting at this altitude. But when I reached the top — 5,799m, 19,024 feet — the world's highest motorable road... something clicked. This wasn't just a checkbox on a list. This was proof that dreams, when chased long enough, become reality. The Ladakh that was closed in 2023, that pushed me to Spiti instead — I was now standing at its highest point. Came back to Hanle, completed the day with a full heart.",
+        highlights: [
+          "Photi La Pass — 5,550m",
+          "Umling La — 5,799m — WORLD'S HIGHEST",
+          "Countless hairpin bends",
+          "Dream accomplished",
+        ],
+        weather: "Clear, extremely cold and windy at pass",
+        journalEntry: "5,799 meters. I did it. The dream from 2023 is complete. I rode to the top of the motorable world. Everything after this is bonus.",
+      },
+      {
+        day: 11,
+        date: "2024-06-11",
+        title: "Lake of the Mountain Spirit — Hanle to Tso Moriri",
+        location: "Tso Moriri Lake, Ladakh",
+        distance: 200,
+        elevation: 4522,
+        mood: "euphoric",
+        summary: "Another lake day, but Tso Moriri is different from Pangong. More serene, less touristy, equally stunning. Refueled at Nyoma again, visited Puga Hot Springs (surreal landscape of steam vents and colorful mineral deposits). The last 10km to Tso Moriri were the worst road of the trip, but the journey before that — via Kyagar Tso Lake — was next level beautiful. Kyagar Tso is smaller but equally blue. Reached Tso Moriri for dinner. Two legendary lakes in three days.",
+        highlights: [
+          "Puga Hot Springs — geothermal wonder",
+          "Kyagar Tso Lake — hidden gem",
+          "Tso Moriri Lake — sacred and serene",
+          "Worst 10km road of the trip",
+        ],
+        weather: "Clear",
+        food: ["Dinner at Tso Moriri"],
+        journalEntry: "Kyagar Tso was unexpected. Tso Moriri is peaceful in a way Pangong isn't — fewer people, more reflection. Two high-altitude lakes in my memory now.",
+      },
+      {
+        day: 12,
+        date: "2024-06-12",
+        title: "The Return Begins — Tso Moriri to Jispa",
+        location: "Jispa, Himachal Pradesh",
+        distance: 350,
+        elevation: 4890,
+        mood: "content",
+        summary: "The longest single riding day of the trip. Started from Tso Moriri, and on the way out, spotted Faisal Khan — the car YouTuber. Said hello, exchanged a wave, fellow traveler recognition. Witnessed Tsokar Lake, then joined the Leh-Manali Highway at Pang-Debering junction. What followed was a greatest-hits tour: More Plains (surreal flat landscape), Lachung La (5,065m), Nakee La (4,739m), the famous Gata Loops (21 hairpin bends), Baralacha La (4,890m), Suraj Tal Lake, and Deepak Tal. Finally reached Jispa as the light faded. Full circle — Jispa was Day 2 on the way up.",
+        highlights: [
+          "Met Faisal Khan (YouTuber) — fellow traveler wave",
+          "Tsokar Lake",
+          "More Plains — alien landscape",
+          "Lachung La — 5,065m",
+          "Nakee La — 4,739m",
+          "Gata Loops — 21 hairpins",
+          "Baralacha La — 4,890m",
+          "Suraj Tal & Deepak Tal lakes",
+        ],
+        weather: "Variable",
+        peoplemet: ["Faisal Khan — YouTuber"],
+        journalEntry: "350km of pure Himalayan highlights. Every pass, every lake, every turn. Jispa feels like meeting an old friend. The return journey has begun.",
+      },
+      {
+        day: 13,
+        date: "2024-06-13",
+        title: "Parvati Valley Detour — Jispa to Kasol",
+        location: "Kasol, Himachal Pradesh",
+        distance: 200,
+        elevation: 1580,
+        mood: "content",
+        summary: "Dropped altitude significantly — from 3,200m to 1,580m. The body felt the temperature rise but also the oxygen increase. Kasol in Parvati Valley is known for... let's say, its alternative offerings. When in Rome, do as Romans do. Tried the famous local 'specialties' — brown and green varieties. The quality was as advertised. Legal or not, Kasol operates on its own rules. Saw many foreigners who had clearly made Kasol their extended home. Spent time by the Parvati River, reflecting on the journey.",
+        highlights: [
+          "Altitude drop — 3,200m to 1,580m",
+          "Parvati Valley entry",
+          "Kasol's famous... hospitality",
+          "International hippie community",
+          "River bank reflection",
+        ],
+        weather: "Warm, humid",
+        journalEntry: "From Umling La to Kasol — from the world's highest road to a different kind of high. Himachal has many faces. Tomorrow, reality returns.",
+      },
+      {
+        day: 14,
+        date: "2024-06-14",
+        title: "Mechanical Betrayal — Kasol toward Delhi",
+        location: "Sundernagar, Himachal Pradesh",
+        distance: 200,
+        elevation: 900,
+        mood: "struggling",
+        summary: "Started toward Delhi, but the Interceptor had other plans. Mid-journey, the bike started having battery problems. Checked with a nearby mechanic — he couldn't fix it. Stranded in Sundernagar with a flight tomorrow and a dead bike. The mountains give, and the mountains take. Found a hotel, accepted the situation, planned for morning.",
+        highlights: [
+          "Battery failure mid-journey",
+          "Local mechanic couldn't help",
+          "Stranded in Sundernagar",
+          "Acceptance of delays",
+        ],
+        weather: "Warm",
+        journalEntry: "The bike chose today to break down. Flight is tomorrow. I'm not panicking — after Umling La, this feels manageable. Tomorrow I find a solution.",
+      },
+      {
+        day: 15,
+        date: "2024-06-15",
+        title: "The Sundernagar Savior — Fixed and Home",
+        location: "Gurgaon",
+        distance: 400,
+        elevation: 216,
+        mood: "euphoric",
+        summary: "Towed the bike to the Royal Enfield showroom — in Himachal they call it 'agency'. Found a supportive mechanic who understood my urgency when I explained I had a flight the next day. He diagnosed the problem: RR unit (regulator-rectifier) was dead. Replaced it, bike came alive at 2 PM. Started at 2:30 PM from Sundernagar, rode like the wind, reached Gurgaon by 8 PM. 400 km in 5.5 hours. The mountains weren't done testing me, but they let me pass.",
+        highlights: [
+          "RE 'agency' in Sundernagar",
+          "Supportive mechanic diagnosed RR unit failure",
+          "Fixed by 2 PM",
+          "400 km dash to Gurgaon",
+          "Made it home",
+        ],
+        weather: "Hot",
+        peoplemet: ["The Sundernagar RE mechanic — trip savior"],
+        journalEntry: "The mechanic didn't just fix my bike, he saved my trip from ending on a bad note. 400 km in 5.5 hours — the plains have their own challenges. But I'm here. Tomorrow I fly home.",
+      },
+      {
+        day: 16,
+        date: "2024-06-16",
+        title: "Journey Complete — Flight to Hyderabad",
+        location: "Hyderabad",
+        distance: 0,
+        elevation: 500,
+        mood: "content",
+        summary: "Flew back to Hyderabad. The bike would follow via parcel. 16 days, 2,800 km, two legendary valleys, countless passes, and the world's highest motorable road. Ladakh 2024 — the dream that started in 2023 — was finally, completely, accomplished.",
+        highlights: [
+          "Flight home",
+          "Bike to be parcelled",
+          "16 days complete",
+          "Dream accomplished",
+        ],
+        journalEntry: "Home. The mountains are behind me but inside me forever. Ladakh wasn't just a destination — it was unfinished business. Now it's finished. Time to dream the next dream.",
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/ladakh-2024/moment-umlingla.jpg",
+        caption: "Umling La — 5,799m. The world's highest motorable road. I rode here. The 2023 dream, finally accomplished.",
+        location: "Umling La Pass",
+        timestamp: "Day 10",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/ladakh-2024/moment-pangong.jpg",
+        caption: "Pangong Lake. The blue that photographs can't capture. I sat here for hours, saying nothing, needing nothing.",
+        location: "Pangong Tso",
+        timestamp: "Day 8",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/ladakh-2024/moment-shinkula.jpg",
+        caption: "Shinkula Pass — 5,091m. Snow everywhere, complete whiteout, the gateway to Zanskar. This road is heaven.",
+        location: "Shinkula Pass",
+        timestamp: "Day 3",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/ladakh-2024/moment-phukthal.jpg",
+        caption: "Phukthal Monastery. I almost didn't make it back from this trek. But rajma-rice and determination got me through.",
+        location: "Phukthal Monastery",
+        timestamp: "Day 4",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/ladakh-2024/moment-zanskar.jpg",
+        caption: "Zanskar Valley — remote, raw, real. The landscape that makes you feel small and alive at the same time.",
+        location: "Zanskar Valley",
+        timestamp: "Day 3-5",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/ladakh-2024/moment-padumleh.jpg",
+        caption: "The Padum-Leh road. Sharp stones, drilling work, 200m of extreme off-roading. The most beautiful road in Ladakh.",
+        location: "Padum-Leh Road",
+        timestamp: "Day 6",
+      },
+      {
+        id: "moment-7",
+        image: "/images/journeys/ladakh-2024/moment-tsomoriri.jpg",
+        caption: "Tso Moriri Lake. Quieter than Pangong, equally beautiful. The sacred lake of Ladakh.",
+        location: "Tso Moriri",
+        timestamp: "Day 11",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Dreams don't expire. Ladakh was closed in 2023, but I got there in 2024. Sometimes the delay makes the arrival sweeter.",
+        category: "life",
+      },
+      {
+        id: "learning-2",
+        insight: "Acclimatization isn't optional — it's survival. Take the extra day in Jispa. Your body will thank you at 5,799m.",
+        category: "travel",
+      },
+      {
+        id: "learning-3",
+        insight: "The Padum-Leh road via Singe La and Sirsir La is the real Ladakh experience. Skip the mainstream routes if you want to see what the Himalayas really look like.",
+        category: "travel",
+      },
+      {
+        id: "learning-4",
+        insight: "Rajma-rice at 4,000m after an exhausting trek is the best meal you'll ever have. Context is everything.",
+        category: "life",
+      },
+      {
+        id: "learning-5",
+        insight: "Carry the number of a good mechanic. The Sundernagar 'agency' mechanic saved my trip — always have a backup plan for breakdowns.",
+        category: "travel",
+      },
+      {
+        id: "learning-6",
+        insight: "Parcelling the bike makes long trips sustainable. No need for 900km days on the plains when you can save energy for the mountains.",
+        category: "travel",
+      },
+    ],
+    ambientAudio: {
+      enabled: true,
+      track: "/audio/ladakh-monastery.mp3",
+      description: "Buddhist chants, wind through prayer flags, distant bike engines",
+    },
+    impact: {
+      physical: 95,
+      emotional: 90,
+      spiritual: 85,
+      chaos: 55,
+    },
+    readingTime: 25,
+    featured: true,
+    published: true,
+    lastUpdated: "2024-07-15",
+  },
+
+  // ============================================
+  // 2024 - KASHMIR
+  // ============================================
+  {
+    id: "kashmir-2024",
+    slug: "kashmir-2024",
+    title: "Kashmir",
+    subtitle: "First snowfall and paradise found",
+    date: "2024-12",
+    year: 2024,
+    month: "December",
+    travelMode: "Flight",
+    companionship: "FRIENDS",
+    categories: ["cultural", "high-altitude"],
+    destination: "Kashmir",
+    region: "Kashmir",
+    heroImage: "/images/journeys/kashmir-2024/hero.jpg",
+    thumbnailImage: "/images/journeys/kashmir-2024/thumb.jpg",
+    galleryImages: [
+      "/images/journeys/kashmir-2024/gallery-1.jpg",
+      "/images/journeys/kashmir-2024/gallery-2.jpg",
+      "/images/journeys/kashmir-2024/gallery-3.jpg",
+      "/images/journeys/kashmir-2024/gallery-4.jpg",
+      "/images/journeys/kashmir-2024/gallery-5.jpg",
+    ],
+    tagline: "A trip planned solo, experienced with friends, blessed by the first snowfall of my life.",
+    introduction:
+      "This was a trip again planned solo and later asked my friends Prajwal and Prathamesh, and somehow we all were able to make it. From the sudden temperature drop of 25°C in Hyderabad to 4°C in Srinagar, to witnessing my first snowfall in Pahalgam - Kashmir exceeded every expectation. The Shikara rides on Dal Lake, the breathtaking Gulmarg Gondola, the spectacular mountain views of Sonmarg, and the magical two days of continuous snowfall made this journey unforgettable. At the end, we can say it was God's plan who made us plan in such a way that we could experience all these things at the perfect place and at the perfect time.",
+    whyIWent:
+      "Kashmir had always been on my mind - the paradise of India that I had only seen in pictures and movies. When my friends Prajwal and Prathamesh agreed to join what was initially a solo plan, it felt right. December seemed like the perfect time to experience winter in the valley.",
+    transformation: {
+      before: {
+        mindset: "Excited about experiencing true winter for the first time, coming from the warmth of Hyderabad",
+        expectations: [
+          "To see the famous Dal Lake and Shikara rides",
+          "To experience the Gulmarg Gondola ride",
+          "To witness the beauty of Kashmir's mountains",
+        ],
+        fears: [
+          "The extreme cold after living in Hyderabad's 25°C weather",
+          "Whether the trip would work out with friends joining a solo plan",
+        ],
+      },
+      after: {
+        changes: [
+          "Experienced my first snowfall - a moment that cannot be explained in words",
+          "Learned how to handle extreme cold and help others stuck in snow",
+          "Understood the importance of CRPF soldiers protecting the sensitive areas",
+        ],
+        perspectives: [
+          "Nature rewards those who wait - the snowfall came at the perfect time",
+          "Sometimes the best trips are the ones where plans change and friends join",
+          "The beauty of Kashmir is beyond what any picture can capture",
+        ],
+        whatStayed: [
+          "The warmth of Kashmiri hospitality despite the cold weather",
+          "The taste of authentic Kashmiri Dum Aloo",
+          "The memory of that quiet trek in the snowfall where we were the only people around",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "First Snowfall of My Life",
+      description:
+        "Day 7 was the best day of the Kashmir trip. On our way to Pahalgam, we witnessed the first snowfall of my life. It was something entirely different - we stopped for lunch and had fun with the snow. The road got blocked due to heavy snowfall, and we helped many people push their cars that were stuck in the snow. Though we reached the Airbnb late, it was a blessing because we got time to enjoy the snowfall outside. The next day, the snowfall continued, and we went for a small trek where we were the only people around - the entire area was reserved for ourselves. An experience that cannot be explained in words.",
+      type: "awe",
+      quote: "The entire area was reserved for ourselves - an experience that cannot be explained in words",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2024-12-01",
+        title: "Arrival in Srinagar",
+        location: "Srinagar",
+        mood: "euphoric",
+        summary:
+          "Reached Srinagar with a delay in flight, landing at 7 PM. The sudden change in temperature from 25°C in Hyderabad to 4°C was a different experience to feel that cold. Stayed in an Airbnb near Dal Lake.",
+        highlights: [
+          "First feeling of 4°C temperature coming from 25°C Hyderabad",
+          "Dinner at Sri Vaishnav Dhaba - one of the best pure veg restaurants in Srinagar",
+        ],
+        food: ["Sri Vaishnav Dhaba - highly recommended pure veg restaurant"],
+      },
+      {
+        day: 2,
+        date: "2024-12-02",
+        title: "Shikara Ride and Shankaracharya Temple",
+        location: "Srinagar",
+        mood: "content",
+        summary:
+          "A day of experiencing Srinagar's iconic attractions. The Shikara ride on Dal Lake with the floating market and hot drinks on the boat was a unique experience. Visited the ancient Shankaracharya Temple in the evening.",
+        highlights: [
+          "Shikara ride on Dal Lake for 1100 Rs",
+          "Floating market experience on the boat",
+          "Hot drinks on the Shikara",
+          "Visited Kandur shop where they prepare local Kashmiri bread",
+          "Shankaracharya Temple - very ancient and spiritual",
+        ],
+      },
+      {
+        day: 3,
+        date: "2024-12-03",
+        title: "Journey to Gulmarg",
+        location: "Gulmarg",
+        mood: "content",
+        summary:
+          "Started towards Gulmarg and checked into the Airbnb. Visited the nearby frozen waterfall. The stay had great food options where we tried authentic Kashmiri cuisine.",
+        highlights: [
+          "Visited frozen waterfall near the stay",
+          "Tried Kashmiri Dum Aloo - absolutely delicious",
+          "Moong Dal and rice at the stay",
+        ],
+        food: ["Kashmiri Dum Aloo", "Moong Dal with rice"],
+      },
+      {
+        day: 4,
+        date: "2024-12-04",
+        title: "Gulmarg Gondola Adventure",
+        location: "Gulmarg",
+        mood: "euphoric",
+        summary:
+          "The Gulmarg Gondola ride till Phase 2 was fantastic. The views were breathtaking and the gondola ride itself was a different experience. Did pushups at Phase 2 and even some tabla composition recital.",
+        highlights: [
+          "Gulmarg Gondola ride to Phase 2",
+          "Spectacular mountain views from the top",
+          "Did pushups at Phase 2",
+          "Tabla composition recital amidst the mountains",
+        ],
+      },
+      {
+        day: 5,
+        date: "2024-12-05",
+        title: "Journey to Sonmarg",
+        location: "Sonmarg",
+        mood: "content",
+        summary:
+          "Started towards Sonmarg and settled in the Airbnb. A day of rest after the adventures of the past few days.",
+        highlights: ["Scenic drive to Sonmarg", "Rest and relaxation at the Airbnb stay"],
+      },
+      {
+        day: 6,
+        date: "2024-12-06",
+        title: "Horse Ride in Sonmarg",
+        location: "Sonmarg",
+        mood: "euphoric",
+        summary:
+          "Explored the main area of Sonmarg. Had a horse ride which was a new experience. The mountain views were spectacular.",
+        highlights: [
+          "Horse ride in Sonmarg - a new experience",
+          "Spectacular mountain views",
+          "Explored the main Sonmarg area",
+        ],
+      },
+      {
+        day: 7,
+        date: "2024-12-07",
+        title: "First Snowfall - The Best Day",
+        location: "En route to Pahalgam",
+        mood: "euphoric",
+        summary:
+          "THE BEST DAY of the Kashmir trip! Witnessed the first snowfall of my life while traveling to Pahalgam. Stopped for lunch and had fun with snow. Road got blocked due to heavy snowfall. Helped many people push cars stuck in snow. Reached Airbnb late but got time to enjoy snowfall outside.",
+        highlights: [
+          "First snowfall of my life!",
+          "Fun with snow during lunch stop",
+          "Road blocked due to heavy snowfall",
+          "Helped push cars stuck in snow",
+          "Enjoyed snowfall outside the Airbnb",
+        ],
+        food: ["Simple homemade rice and dal at the Airbnb"],
+      },
+      {
+        day: 8,
+        date: "2024-12-08",
+        title: "Trek in Continuous Snowfall",
+        location: "Pahalgam",
+        mood: "euphoric",
+        summary:
+          "The snowfall did not stop for 2 days continuously. We went for a small walk/trek in the snowfall where we were the only people around. The entire area was reserved for ourselves - an experience that cannot be explained in words.",
+        highlights: [
+          "Continuous snowfall for 2 days",
+          "Small trek/walk in the snowfall",
+          "Entire area to ourselves - no one else around",
+          "An experience beyond words",
+        ],
+      },
+      {
+        day: 9,
+        date: "2024-12-09",
+        title: "Return to Srinagar",
+        location: "Srinagar",
+        mood: "content",
+        summary:
+          "Traveled back to Srinagar and ate at our favourite restaurant. Throughout this trip, we saw CRPF vehicles every kilometer with soldiers protecting the sensitive area in the state of Jammu and Kashmir.",
+        highlights: [
+          "Back to favourite restaurant in Srinagar",
+          "Observed CRPF presence throughout the journey",
+          "Appreciation for soldiers protecting the region",
+        ],
+      },
+      {
+        day: 10,
+        date: "2024-12-10",
+        title: "Journey Back Home",
+        location: "Hyderabad",
+        mood: "content",
+        summary:
+          "Flew back to Hyderabad. The view of snow-covered mountains from the flight was the perfect ending. Eyes completely satisfied with the trip - nothing was left to experience. Perfectly planned trip where nature also helped us enjoy the beauty of Kashmir.",
+        highlights: [
+          "Snow mountains visible from flight",
+          "Perfect ending to a perfect trip",
+          "Nothing left unexperienced",
+          "God's plan - perfect place, perfect time",
+        ],
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/kashmir-2024/moment-1.jpg",
+        caption: "Shikara ride on Dal Lake with the floating market - a quintessential Kashmir experience.",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/kashmir-2024/moment-2.jpg",
+        caption: "Gulmarg Gondola Phase 2 - did pushups with the breathtaking mountain backdrop.",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/kashmir-2024/moment-3.jpg",
+        caption: "First snowfall of my life on the way to Pahalgam - a moment I will never forget.",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/kashmir-2024/moment-4.jpg",
+        caption: "Trek in continuous snowfall at Pahalgam - the entire area was ours alone.",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/kashmir-2024/moment-5.jpg",
+        caption: "Snow-covered mountains from the flight back - the perfect goodbye to Kashmir.",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/kashmir-2024/moment-6.jpg",
+        caption: "Walking through the silent snowfall - footprints in fresh snow, no soul in sight.",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Sometimes the best trips are the ones where solo plans become group adventures. Friends joining my solo plan made the experience richer.",
+        category: "people",
+      },
+      {
+        id: "learning-2",
+        insight: "Nature rewards patience. The snowfall came at the perfect time, as if it was all part of a divine plan.",
+        category: "spiritual",
+      },
+      {
+        id: "learning-3",
+        insight: "In difficult times, help others. Pushing cars stuck in snow brought more joy than any planned activity.",
+        category: "people",
+      },
+      {
+        id: "learning-4",
+        insight: "Simple food after an adventure tastes the best. Homemade dal-rice after the snowfall day was the most satisfying meal.",
+        category: "life",
+      },
+      {
+        id: "learning-5",
+        insight: "Behind the beauty of Kashmir, there are soldiers working every kilometer to keep it safe. Respect for their service.",
+        category: "people",
+      },
+    ],
+    impact: {
+      physical: 50,
+      emotional: 90,
+      spiritual: 70,
+      chaos: 60,
+    },
+    readingTime: 12,
+    featured: true,
+    published: true,
+    lastUpdated: "2025-01-31",
+  },
+
+  // ============================================
+  // 2025 - MAHA KUMBH (CAR JOURNEY WITH FRIENDS)
+  // ============================================
+  {
+    id: "mahakumbh-2025",
+    slug: "mahakumbh-2025",
+    title: "Maha Kumbh",
+    subtitle: "Faith at the scale of galaxies",
+    date: "2025-02",
+    year: 2025,
+    month: "February",
+    travelMode: "CAR JOURNEY",
+    companionship: "FRIENDS",
+    categories: ["spiritual"],
+    destination: "Prayagraj",
+    region: "Uttar Pradesh",
+    route: {
+      locations: [
+        { name: "Hyderabad", coordinates: { lat: 17.385, lng: 78.4867 }, type: "start" },
+        { name: "Prayagraj", coordinates: { lat: 25.4358, lng: 81.8463 }, type: "highlight", description: "Triveni Sangam - Maha Kumbh" },
+        { name: "Varanasi", coordinates: { lat: 25.3176, lng: 82.9739 }, type: "waypoint", description: "Ghats and Temples" },
+        { name: "Hyderabad", coordinates: { lat: 17.385, lng: 78.4867 }, type: "end" },
+      ],
+      totalDistance: 2800,
+      totalDays: 5,
+      terrainDifficulty: "moderate",
+    },
+    heroImage: "/images/journeys/mahakumbh-2025/hero.jpg",
+    thumbnailImage: "/images/journeys/mahakumbh-2025/thumb.jpg",
+    galleryImages: [
+      "/images/journeys/mahakumbh-2025/gallery-1.jpg",
+      "/images/journeys/mahakumbh-2025/gallery-2.jpg",
+      "/images/journeys/mahakumbh-2025/gallery-3.jpg",
+    ],
+    tagline: "A conversation in the park turned into witnessing the largest human gathering on Earth.",
+    introduction:
+      "This is the trip that was planned when I was walking in the park with my friend. We slowly started talking about the Maha Kumbh and noticed the dates had 3 holidays - I only needed to take 2 leaves. What started as a casual conversation became a 5-day journey with friends, driving from Hyderabad to witness crores of people taking a holy dip at the Triveni Sangam. The coordination, adjustment, and being on the same page with friends made this trip truly memorable.",
+    whyIWent:
+      "It started as a simple conversation during a walk in the park. The timing was perfect - 3 holidays meant only 2 leaves needed. Once I convinced my friends to join, there was no looking back. This wasn't just about faith or religion for me - it was about determination, about doing something I had imagined and wondered how it would really feel like.",
+    transformation: {
+      before: {
+        mindset: "Excited but uncertain about driving such a long distance and handling the massive crowds at Kumbh",
+        expectations: [
+          "To witness the largest human gathering on Earth",
+          "To take a dip at the sacred Triveni Sangam",
+          "A memorable road trip with friends",
+        ],
+        fears: [
+          "The extremely long car journey from Hyderabad",
+          "Getting stuck in the massive traffic and crowds",
+          "Whether we would actually make it there",
+        ],
+      },
+      after: {
+        changes: [
+          "Experienced silence amidst lakhs of people - a feeling our inner soul can only understand",
+          "Realized the power of determination - what I imagined became reality",
+          "Saw the real India in the community kitchens feeding thousands",
+        ],
+        perspectives: [
+          "Faith is not just religious - it's about collective human determination",
+          "Friends who adjust and coordinate together can achieve anything",
+          "The journey matters as much as the destination",
+        ],
+        whatStayed: [
+          "The feeling of taking the dip at Sangam with friends around",
+          "Standing on the pipa pool bridge watching the Ganga flow",
+          "Late night conversations and music in the car",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "The Sacred Dip at Triveni Sangam",
+      description:
+        "We went right to the middle of the Sangam using a boat - where the Ganga, Yamuna, and Saraswati rivers meet. Spent around 30 minutes with friends and the crowd around us. Even though there were lakhs of people, I felt silence. After taking the dip, I felt a different happiness - something that only our inner soul can feel. It wasn't just about religion for me. It was about the determination of doing something I had only imagined. That moment, surrounded by crores of believers, yet feeling deeply personal - that's what Kumbh gave me.",
+      type: "devotion",
+      quote: "Even though there were lakhs of people around us, I felt silence. Our inner soul can only feel this.",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2025-02-26",
+        title: "The Road Trip Begins",
+        location: "Hyderabad to Highway",
+        distance: 600,
+        mood: "euphoric",
+        summary:
+          "Started from Hyderabad at 1 PM. The journey was long but we were mentally prepared. With friends, music playing, and everyone getting a chance to play their own songs - the car became our world. We pushed through and covered about 2/3 of the journey before stopping at a fuel station for rest.",
+        highlights: [
+          "Started at 1 PM from Hyderabad",
+          "Everyone got to play their own music",
+          "Great energy and excitement in the car",
+          "Covered 2/3 of the journey on Day 1",
+        ],
+        food: ["Dinner at 2 AM at a highway dhaba"],
+        journalEntry: "The excitement is real. Friends, music, highway - this is what road trips are made of. We're really doing this!",
+      },
+      {
+        day: 2,
+        date: "2025-02-27",
+        title: "The Test of Patience",
+        location: "Highway to Prayagraj",
+        distance: 500,
+        mood: "struggling",
+        summary:
+          "Rested from 2 AM to 6 AM at the fuel station, then started again. By 11 AM we were just 100 km from Prayagraj. But those 50 km took 5 hours due to heavy traffic! Doubts crept in - will we even make it? After talking to people around, we pushed through. The last 50 km took till 11 PM. Finally reaching the stay felt like passing the first test.",
+        highlights: [
+          "Rest stop at fuel station from 2 AM to 6 AM",
+          "100 km left at 11 AM",
+          "50 km took 5 hours due to traffic!",
+          "Doubts and determination battled",
+          "Reached stay at 11 PM",
+          "Felt like we passed the first test",
+        ],
+        food: ["Dinner on the way before reaching stay"],
+        journalEntry: "Those 50 km tested everything. There were moments we thought we won't make it. But we did. That's all that matters.",
+      },
+      {
+        day: 3,
+        date: "2025-02-28",
+        title: "The Sacred Dip",
+        location: "Prayagraj - Triveni Sangam",
+        mood: "euphoric",
+        summary:
+          "THE DAY. Headed to the Sangam where crores of Indians take the holy dip. Took a boat right to the middle where Ganga, Yamuna, and Saraswati meet. Spent 30 minutes there with friends. Felt silence amidst lakhs of people. After the dip, pure happiness. In the evening, walked through the Kumbh Mela area - the biggest crowd we've ever seen. Street food, sadhus by the riverside, and standing on the pipa pool bridge watching the Ganga - real peace.",
+        highlights: [
+          "Boat ride to the middle of Sangam",
+          "Holy dip at Triveni Sangam",
+          "30 minutes of pure peace with friends",
+          "Silence amidst lakhs of people",
+          "Evening walk in Kumbh Mela area",
+          "Local street food",
+          "Pipa pool bridge experience",
+        ],
+        journalEntry: "I felt it. That thing people talk about. Even with lakhs around, there was silence. My inner soul felt something different today.",
+      },
+      {
+        day: 4,
+        date: "2025-03-01",
+        title: "Varanasi - The Eternal City",
+        location: "Prayagraj to Varanasi",
+        distance: 120,
+        mood: "content",
+        summary:
+          "Started towards Varanasi. Stopped for lunch at a community kitchen preparing food for thousands of pilgrims - homely food where I saw the real India. Reached Banaras by 5 PM, took a room near Manikarnika Ghat. In the evening, explored the ghats and saw sadhus who came for Shivratri.",
+        highlights: [
+          "Community kitchen lunch - real India",
+          "Saw food preparation for thousands",
+          "Reached Varanasi by 5 PM",
+          "Stay near Manikarnika Ghat",
+          "Evening ghat exploration",
+          "Sadhus gathered for Shivratri",
+        ],
+        food: ["Community kitchen lunch - homely food for pilgrims"],
+        journalEntry: "The community kitchens feeding thousands... this is India. This is faith in action. Banaras welcomed us with its eternal energy.",
+      },
+      {
+        day: 5,
+        date: "2025-03-02",
+        title: "Final Prayers and Return",
+        location: "Varanasi to Hyderabad",
+        distance: 1200,
+        mood: "content",
+        summary:
+          "Hoped to visit Kashi Vishwanath and Kaal Bhairav temples but the crowd was too large. But in Banaras, god is in every corner - visited Dhandapani Bhairav temple nearby and offered prayers. Took one last bath in the Ganga. Started the long drive back. Due to exhaustion and lack of sleep, had a minor accident - thankfully not major, no breakdown. Reached Hyderabad the next evening.",
+        highlights: [
+          "Could not visit Kashi Vishwanath due to crowd",
+          "Visited Dhandapani Bhairav temple instead",
+          "Final bath in River Ganga",
+          "Long drive back to Hyderabad",
+          "Minor accident due to exhaustion",
+          "Reached Hyderabad next evening safely",
+        ],
+        journalEntry: "God is in every corner of Banaras - that's what I've learned from my visits. The accident shook us but we made it. Friends stayed strong together.",
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/mahakumbh-2025/moment-1.jpg",
+        caption: "The boat ride to the middle of Sangam - where three sacred rivers meet.",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/mahakumbh-2025/moment-2.jpg",
+        caption: "The holy dip at Triveni Sangam - silence amidst lakhs of people.",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/mahakumbh-2025/moment-3.jpg",
+        caption: "Walking through the Kumbh Mela - the largest human gathering we've ever witnessed.",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/mahakumbh-2025/moment-4.jpg",
+        caption: "Standing on the pipa pool bridge, watching the Ganga flow in peace.",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/mahakumbh-2025/moment-5.jpg",
+        caption: "The road trip crew - friends who made this journey unforgettable.",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/mahakumbh-2025/moment-6.jpg",
+        caption: "Sadhus and devotees gathered at the ghats of Varanasi for Shivratri.",
+      },
+      {
+        id: "moment-7",
+        image: "/images/journeys/mahakumbh-2025/moment-7.jpg",
+        caption: "Community kitchen preparing food for thousands - where I saw the real India.",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Silence can exist even among lakhs of people. The inner soul finds peace when it truly seeks it.",
+        category: "spiritual",
+      },
+      {
+        id: "learning-2",
+        insight: "A casual conversation in a park can lead to witnessing the largest gathering on Earth. Every idea deserves a chance.",
+        category: "life",
+      },
+      {
+        id: "learning-3",
+        insight: "Friends who are on the same page, who adjust and coordinate - they make any journey possible.",
+        category: "people",
+      },
+      {
+        id: "learning-4",
+        insight: "Faith is not just about religion. The community kitchens feeding thousands showed me faith in action - real India.",
+        category: "spiritual",
+      },
+      {
+        id: "learning-5",
+        insight: "Rest is not optional on long drives. The minor accident reminded us that reaching safely matters more than reaching fast.",
+        category: "life",
+      },
+    ],
+    ambientAudio: {
+      enabled: true,
+      track: "/audio/kumbh-chants.mp3",
+      description: "Temple bells, distant chants, river sounds",
+    },
+    impact: {
+      physical: 70,
+      emotional: 95,
+      spiritual: 100,
+      chaos: 85,
+    },
+    readingTime: 12,
+    featured: true,
+    published: true,
+    lastUpdated: "2025-01-31",
+  },
+
+  // ============================================
+  // 2025 - NORTH EAST INDIA (SOLO BIKE RIDE)
+  // ============================================
+  {
+    id: "northeast-2025",
+    slug: "northeast-2025",
+    title: "North East India",
+    subtitle: "The forgotten frontier on two wheels",
+    date: "2025-08",
+    year: 2025,
+    month: "August",
+    travelMode: "SOLO BIKE RIDE",
+    companionship: "Solo",
+    categories: ["cultural", "high-altitude"],
+    destination: "North East India",
+    region: "Arunachal Pradesh & Meghalaya",
+    route: {
+      locations: [
+        { name: "Guwahati", coordinates: { lat: 26.1445, lng: 91.7362 }, type: "start", description: "Collected parcelled bike" },
+        { name: "Bhalukpong", coordinates: { lat: 27.0167, lng: 92.6500 }, type: "waypoint", description: "Assam-Arunachal border" },
+        { name: "Mandala Top", coordinates: { lat: 27.2500, lng: 92.4167 }, type: "highlight", description: "Spectacular views, no network" },
+        { name: "Sangti Valley", coordinates: { lat: 27.3500, lng: 92.2500 }, type: "highlight", description: "Farm homestay by river" },
+        { name: "Sela Pass", coordinates: { lat: 27.5000, lng: 92.1000 }, type: "waypoint", description: "Gateway to Tawang" },
+        { name: "Tawang", coordinates: { lat: 27.5861, lng: 91.8594 }, type: "highlight", description: "Monastery in the clouds" },
+        { name: "Bumla Pass", coordinates: { lat: 27.7200, lng: 91.9800 }, type: "highlight", description: "India-China border" },
+        { name: "Madhuri Lake", coordinates: { lat: 27.6500, lng: 91.9000 }, type: "highlight", description: "Sangetsar Lake" },
+        { name: "Shergaon", coordinates: { lat: 27.1167, lng: 92.5833 }, type: "waypoint" },
+        { name: "Shillong", coordinates: { lat: 25.5788, lng: 91.8933 }, type: "highlight", description: "Met friend, base for Meghalaya" },
+        { name: "Dawki", coordinates: { lat: 25.1842, lng: 92.0242 }, type: "highlight", description: "Bangladesh border, crystal river" },
+        { name: "Living Root Bridges", coordinates: { lat: 25.2500, lng: 91.7000 }, type: "highlight", description: "Single and double decker" },
+        { name: "Guwahati", coordinates: { lat: 26.1445, lng: 91.7362 }, type: "end" },
+      ],
+      totalDistance: 1800,
+      totalDays: 15,
+      maxElevation: 4633,
+      minElevation: 60,
+      terrainDifficulty: "challenging",
+    },
+    heroImage: "/images/journeys/northeast-2025/hero.jpg",
+    thumbnailImage: "/images/journeys/northeast-2025/thumb.jpg",
+    galleryImages: [
+      "/images/journeys/northeast-2025/gallery-1.jpg",
+      "/images/journeys/northeast-2025/gallery-2.jpg",
+      "/images/journeys/northeast-2025/gallery-3.jpg",
+    ],
+    tagline: "The plan came out of nowhere. Parcelled the bike to Guwahati. 15 days through India's best-kept secret.",
+    introduction:
+      "The plan to visit the Northeast came out of nowhere. I parcelled my bike to Guwahati, took a flight from Hyderabad, and collected it from the railway station - which was tricky as I forgot the original receipt. But that was just the beginning. What followed was 15 days of rain-soaked roads, rock falls, heart-stopping passes, the India-China border, crystal-clear rivers at Bangladesh border, living root bridges, and the most welcoming people I've ever met. The Northeast people are chill, never overthink, and always welcoming. This was the most unforgettable trip of my life.",
+    whyIWent:
+      "The Northeast had always been that mysterious part of India I knew nothing about. When the plan came out of nowhere, I didn't think twice. Parcelling the bike, flying alone, collecting it at the railway station - the adventure started before the ride even began.",
+    transformation: {
+      before: {
+        mindset: "Excited but uncertain about solo biking through unknown terrain in monsoon season",
+        expectations: [
+          "To explore the forgotten frontier of India",
+          "To see Tawang Monastery",
+          "To experience cultures completely different from mainland India",
+        ],
+        fears: [
+          "Monsoon riding through landslide-prone areas",
+          "Being alone in remote regions with no network",
+          "Collecting the parcelled bike without proper documents",
+        ],
+      },
+      after: {
+        changes: [
+          "Discovered that Arunachal Pradesh is even more beautiful than the Himalayas I visited before",
+          "Experienced standing at the India-China border and seeing Chinese soldiers",
+          "Found that the simplest food - dal rice with veg curry - can be the most memorable",
+        ],
+        perspectives: [
+          "The Northeast people are chill and never overthink - a quality to learn from",
+          "Home-cooked meals by strangers can create connections that fancy restaurants never will",
+          "Being at the right place at the right time is sometimes just luck",
+        ],
+        whatStayed: [
+          "The high altitude lakes on the way to Bumla - lost count of how many",
+          "Cooking with the kitchen staff at Mandala Top",
+          "Momos every night in Shillong with my friend",
+          "The homestay owner's rice wine and yak butter curry",
+        ],
+      },
+    },
+    peakExperience: {
+      title: "Standing at the India-China Border",
+      description:
+        "Day 6 was the happiest day of the trip. The road to Bumla Pass was one of the best I've ever ridden - the mountain landscape changed at every turn. I lost count of the high altitude lakes I saw on the way. At Bumla Pass, an army officer took me to the India-China border and explained about the region. I got to see Chinese soldiers and the land of China from India. This moment made me cry. When we do something apart from our day-to-day activity, it creates a feeling inside us that's hard to explain. After Bumla, I visited Sangetsar Lake (Madhuri Lake) - again, mind-blowing views. I started feeling that Arunachal Pradesh is much better than the Himalayas I visited earlier.",
+      type: "awe",
+      quote: "Standing at the India-China border made me cry. When we do something apart from our routine, it creates a feeling that's hard to explain.",
+    },
+    timeline: [
+      {
+        day: 1,
+        date: "2025-08-01",
+        title: "Collecting the Bike",
+        location: "Guwahati",
+        mood: "struggling",
+        summary:
+          "Flew from Hyderabad to Guwahati. The whole day was spent collecting my parcelled bike from the railway station. It was tricky - I forgot to bring the original receipt from the parcelling station. Had to do workarounds based on the railway officer's instructions to finally get my bike.",
+        highlights: [
+          "Flight from Hyderabad to Guwahati",
+          "Paperwork challenges at railway station",
+          "Finally collected the bike after much effort",
+        ],
+        journalEntry: "Started with a challenge. No receipt, confused officers, but somehow managed. The adventure has begun even before the ride.",
+      },
+      {
+        day: 2,
+        date: "2025-08-02",
+        title: "Into Arunachal Pradesh",
+        location: "Guwahati to Bhalukpong",
+        distance: 250,
+        mood: "content",
+        summary:
+          "Started from Guwahati towards Arunachal Pradesh. Heavy rain on Day 2. Had a heavy breakfast and skipped lunch. Reached Bhalukpong - a small village near the Assam-Arunachal border. Booked a hotel, had dinner, and played football with the local kids.",
+        highlights: [
+          "Heavy rain throughout the journey",
+          "Reached Bhalukpong at Assam-Arunachal border",
+          "Played football with local kids",
+        ],
+        weather: "Heavy Rain",
+        journalEntry: "Rain-soaked but happy. The kids here made my evening. Football in a small border village - not in my plans but perfect.",
+      },
+      {
+        day: 3,
+        date: "2025-08-03",
+        title: "Mandala Top - No Network, Pure Magic",
+        location: "Bhalukpong to Mandala Top",
+        distance: 90,
+        elevation: 2200,
+        mood: "euphoric",
+        summary:
+          "Had veg Arunachal Pradesh thali at 6:30 AM - the sun rises at 4:30 here! The 40 km stretch had zero visibility with rock falls in the middle. Somehow cleared that dangerous road and entered clear zone. The uphill climb to Mandala Top was spectacular. Planned to go down same day but decided to stay. Made friends with the working kids, cooked with them in the kitchen. The food was unbelievable - cannot be priced. No network in this region.",
+        highlights: [
+          "Veg Arunachal thali at 6:30 AM",
+          "40 km of zero visibility and rock falls",
+          "Spectacular Mandala Top views",
+          "Cooked with kitchen staff",
+          "No mobile network - pure peace",
+        ],
+        food: ["Arunachal Pradesh Thali", "Home-cooked dinner with kitchen staff"],
+        journalEntry: "That 40 km was the scariest ride of my life. But Mandala Top... staying here was the right call. Cooking with these kids, no network, just mountains.",
+      },
+      {
+        day: 4,
+        date: "2025-08-04",
+        title: "Sangti Valley - Simple Joys",
+        location: "Mandala Top to Sangti Valley",
+        distance: 35,
+        mood: "content",
+        summary:
+          "Just 35 km to Sangti Valley but what a valley! Took a farmhouse homestay near the river. Great mountain views, farming areas everywhere. The simple dal-rice and veg curry made me go mad - sometimes simple is the best. The owner was friendly, we discussed village life. They offered me fresh farm fruits. Had the same simple menu for dinner.",
+        highlights: [
+          "Farmhouse homestay by the river",
+          "Mountain and farming views",
+          "Simple dal-rice that tasted incredible",
+          "Fresh farm fruits from the owner",
+          "Long discussions about village life",
+        ],
+        food: ["Dal rice with veg curry", "Fresh farm fruits"],
+        journalEntry: "Sometimes the simplest food is the best. This dal-rice... I can't explain it. The valley, the river, the mountains. Why did I wait so long to come here?",
+      },
+      {
+        day: 5,
+        date: "2025-08-05",
+        title: "Sela Pass - Heart in Mouth",
+        location: "Sangti Valley to Tawang",
+        distance: 140,
+        elevation: 4170,
+        mood: "struggling",
+        summary:
+          "Washed my face in the clean river and started towards Tawang via Sela Pass. This was long and terrifying - heavy rain, rock falls, landslides. My heartbeat was racing, completely scared. After crossing the pass, the heart settled and I started seeing a different world - mountains with flowers, beautiful water streams. Reached Tawang, explored the town, found a stay near the monastery. The owner became a real friend - he was an officer in Arunachal Regiment and helped me get the pass to visit Bumla!",
+        highlights: [
+          "Morning face wash in clean river",
+          "Terrifying Sela Pass crossing - rain, landslides",
+          "Beautiful descent with flowers and streams",
+          "Explored Tawang town",
+          "Homestay owner helped get Bumla Pass permit",
+        ],
+        weather: "Heavy Rain",
+        journalEntry: "Sela Pass almost broke me. The fear was real. But after crossing... flowers, streams, a different world. The homestay owner is now a friend. Bumla tomorrow!",
+      },
+      {
+        day: 6,
+        date: "2025-08-06",
+        title: "Bumla Pass - The Happiest Day",
+        location: "Tawang and Bumla Pass",
+        distance: 80,
+        elevation: 4633,
+        mood: "euphoric",
+        summary:
+          "THE BEST DAY. Started at 7 AM for Bumla. The road was one of the best I've ever ridden - mountain landscape changing at every turn. Lost count of high altitude lakes on the way. At Bumla, army officer took me to India-China border. Saw Chinese soldiers and the land of China from India. I cried. After that, visited Sangetsar Lake (Madhuri Lake) - mind-blowing. Started feeling Arunachal is better than the Himalayas. Back in Tawang, visited the Giant Buddha statue and had the prasad they give to visitors.",
+        highlights: [
+          "Best road trip of my life to Bumla",
+          "Countless high altitude lakes on the way",
+          "India-China border - saw Chinese soldiers",
+          "This moment made me cry",
+          "Sangetsar Lake (Madhuri Lake)",
+          "Giant Buddha statue prasad",
+        ],
+        journalEntry: "I cried at the border. When you do something apart from routine, it creates a feeling inside. Today was that day. The lakes, the border, Madhuri Lake... peak of my life.",
+      },
+      {
+        day: 7,
+        date: "2025-08-07",
+        title: "Tawang Monastery and New Friends",
+        location: "Tawang",
+        mood: "content",
+        summary:
+          "Visited Tawang Monastery - talked to a monk about the history, took photos with the head monk. Then to Chizum bridge - an ancient bridge crossing the river valley. Saw different cultures and farming. Went back to Giant Buddha for prasad but was late. Met some bikers, exchanged Insta IDs. Also met a filmmaker from Tawang who shot some cinematic shots of me. Back at homestay, owner offered rice wine and yak butter. Also tried his house curry made Buddhist style - unique experience.",
+        highlights: [
+          "Tawang Monastery - talked to monks",
+          "Photo with head monk",
+          "Ancient Chizum bridge",
+          "Met fellow bikers and filmmaker",
+          "Rice wine and yak butter at homestay",
+          "Buddhist style yak curry",
+        ],
+        food: ["Rice wine", "Yak butter", "Buddhist style curry"],
+        journalEntry: "The monastery, the monks, new biker friends, a filmmaker shooting me... and then rice wine with yak butter. This homestay owner is incredible.",
+      },
+      {
+        day: 8,
+        date: "2025-08-08",
+        title: "Crossing Sela Pass Again",
+        location: "Tawang to Shergaon",
+        distance: 180,
+        elevation: 4170,
+        mood: "content",
+        summary:
+          "Started the return journey towards Assam. Had to cross Sela Pass again but this time no rain made it much easier. Made it to Shergaon. Every part of this state looks completely different - the diversity is incredible.",
+        highlights: [
+          "Easier Sela Pass crossing - no rain",
+          "Made it to other side smoothly",
+          "Reached Shergaon",
+          "Every region looks different",
+        ],
+        journalEntry: "Sela Pass again, but this time easy. Amazing how weather changes everything. Shergaon feels like a completely different state already.",
+      },
+      {
+        day: 9,
+        date: "2025-08-09",
+        title: "Back to Assam",
+        location: "Shergaon to Guwahati",
+        distance: 300,
+        mood: "content",
+        summary:
+          "Long ride back to Guwahati. Saw the countryside of Assam - complete green paddy fields. Crossed the Brahmaputra river. Also saw the India-Bhutan border. Reached hotel, had dinner at Sagar Ratna - the best veg restaurant.",
+        highlights: [
+          "Green paddy fields of Assam countryside",
+          "Crossed Brahmaputra river",
+          "Saw India-Bhutan border",
+          "Dinner at Sagar Ratna",
+        ],
+        food: ["Sagar Ratna - best veg restaurant"],
+        journalEntry: "The green of Assam after Arunachal's mountains - different India, same beauty. Brahmaputra crossing was special.",
+      },
+      {
+        day: 10,
+        date: "2025-08-10",
+        title: "Entering Meghalaya",
+        location: "Guwahati to Shillong",
+        distance: 100,
+        mood: "euphoric",
+        summary:
+          "Started towards Meghalaya. Reached Shillong and met one of my friends who was working there. This became my base for exploring Meghalaya. The reunion felt great after so many solo days.",
+        highlights: [
+          "Entered Meghalaya",
+          "Reached Shillong",
+          "Met my friend working there",
+          "Finally some company after solo days",
+        ],
+        journalEntry: "Solo trip but finally met a friend! Shillong will be home base. Excited for Meghalaya.",
+      },
+      {
+        day: 11,
+        date: "2025-08-11",
+        title: "Dawki River and Bangladesh Border",
+        location: "Shillong to Dawki and back",
+        distance: 160,
+        mood: "euphoric",
+        summary:
+          "Started towards Dawki River at the Bangladesh border. Challenging road with rain and mud slush but managed to reach. The river was crystal clear! Took a boat ride and saw the India-Bangladesh border. Then to Krang Suri waterfalls for lunch. Also did a bamboo trek in the morning - completely alone in the forest. Back to Shillong in evening.",
+        highlights: [
+          "Crystal clear Dawki River",
+          "Boat ride at Bangladesh border",
+          "Saw India-Bangladesh border",
+          "Krang Suri waterfalls",
+          "Solo bamboo trek in the morning",
+        ],
+        journalEntry: "Two international borders in one trip! Dawki river is unreal - you can see the bottom. The boat ride at Bangladesh border was surreal.",
+      },
+      {
+        day: 12,
+        date: "2025-08-12",
+        title: "Seven Sisters Falls and Living Root Bridges",
+        location: "Shillong area",
+        distance: 80,
+        mood: "euphoric",
+        summary:
+          "Started towards Seven Sisters Waterfalls. Foggy on the way but met some photographers who said the falls were clearly visible today - they came 2 days ago and saw nothing due to fog. Felt lucky to be at the right time! Then trekked to the Living Root Bridges - both single and double decker. Heavy and steep climbing but worth it. Back to Shillong.",
+        highlights: [
+          "Seven Sisters Waterfalls - clearly visible",
+          "Lucky timing - was foggy 2 days before",
+          "Trekked to Living Root Bridges",
+          "Single and Double Decker bridges",
+          "Steep but rewarding trek",
+        ],
+        journalEntry: "Right place, right time. The photographers said they saw nothing 2 days ago. Today - crystal clear. The root bridges... nature's engineering is unbelievable.",
+      },
+      {
+        day: 13,
+        date: "2025-08-13",
+        title: "Rest Day",
+        location: "Shillong",
+        mood: "content",
+        summary:
+          "Complete rest day. Did not go out of the room. The body needed recovery after so many days of continuous riding and trekking. Sometimes rest is the best part of a journey.",
+        highlights: [
+          "Complete rest",
+          "Body recovery",
+          "Stayed in room all day",
+        ],
+        journalEntry: "Rest. Just rest. The body was screaming for it.",
+      },
+      {
+        day: 14,
+        date: "2025-08-14",
+        title: "Waterfalls with Local Friends",
+        location: "Shillong area",
+        mood: "euphoric",
+        summary:
+          "Went to another waterfall with my friend and their local friends. It was fun to finally have a small group trip within my big solo journey. The locals knew all the best spots. Laughter, photos, and memories.",
+        highlights: [
+          "Group trip with friend and locals",
+          "A small group trip in a big solo journey",
+          "Local insights and hidden spots",
+          "Fun day with new friends",
+        ],
+        journalEntry: "Solo trip, but today I had a crew. Sometimes the best moments are unplanned.",
+      },
+      {
+        day: 15,
+        date: "2025-08-15",
+        title: "Journey Home",
+        location: "Shillong to Guwahati to Home",
+        distance: 100,
+        mood: "content",
+        summary:
+          "Started from Shillong to Guwahati airport. The taxi driver was a genuine person who shared stories about his life and the culture of Meghalaya. Had to rush home for Ganesh Chaturthi - connected flight from Guwahati to Delhi, then Delhi to Hubballi. Made it home. Throughout Meghalaya, every night I went to my friend's place for drinks and we ate momos at one particular place for 4-5 days. Unforgettable trip.",
+        highlights: [
+          "Taxi driver shared life stories",
+          "Learned about Meghalaya culture",
+          "Connected flights: Guwahati → Delhi → Hubballi",
+          "Made it home for Ganesh Chaturthi",
+          "Every night: drinks with friend and momos",
+        ],
+        journalEntry: "15 days. Two states. Countless memories. The Northeast has changed me. The people here don't overthink, they just welcome you. I'll be back.",
+      },
+    ],
+    moments: [
+      {
+        id: "moment-1",
+        image: "/images/journeys/northeast-2025/moment-1.jpg",
+        caption: "Standing at the India-China border at Bumla Pass - a moment that made me cry.",
+      },
+      {
+        id: "moment-2",
+        image: "/images/journeys/northeast-2025/moment-2.jpg",
+        caption: "One of countless high altitude lakes on the way to Bumla - lost count of how many.",
+      },
+      {
+        id: "moment-3",
+        image: "/images/journeys/northeast-2025/moment-3.jpg",
+        caption: "Sangetsar Lake (Madhuri Lake) - mind-blowing views that felt better than the Himalayas.",
+      },
+      {
+        id: "moment-4",
+        image: "/images/journeys/northeast-2025/moment-4.jpg",
+        caption: "Tawang Monastery - met monks and learned the history of this sacred place.",
+      },
+      {
+        id: "moment-5",
+        image: "/images/journeys/northeast-2025/moment-5.jpg",
+        caption: "Crystal clear Dawki River at Bangladesh border - you can see the bottom.",
+      },
+      {
+        id: "moment-6",
+        image: "/images/journeys/northeast-2025/moment-6.jpg",
+        caption: "Living Root Bridges - single and double decker, nature's own engineering.",
+      },
+      {
+        id: "moment-7",
+        image: "/images/journeys/northeast-2025/moment-7.jpg",
+        caption: "Seven Sisters Waterfalls - lucky to see it clearly, was foggy just 2 days before.",
+      },
+      {
+        id: "moment-8",
+        image: "/images/journeys/northeast-2025/moment-8.jpg",
+        caption: "Giant Buddha Statue in Tawang - received prasad here every day.",
+      },
+      {
+        id: "moment-9",
+        image: "/images/journeys/northeast-2025/moment-9.jpg",
+        caption: "Inside Tawang Monastery - spoke with monks about history and traditions.",
+      },
+      {
+        id: "moment-10",
+        image: "/images/journeys/northeast-2025/moment-10.jpg",
+        caption: "Fellow bikers met at Tawang - exchanged Insta IDs and stories.",
+      },
+      {
+        id: "moment-11",
+        image: "/images/journeys/northeast-2025/moment-11.jpg",
+        caption: "Solo bamboo trek in the morning - completely alone in the forest.",
+      },
+      {
+        id: "moment-12",
+        image: "/images/journeys/northeast-2025/moment-12.jpg",
+        caption: "One of the many stunning waterfalls in Meghalaya.",
+      },
+    ],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "When you do something apart from your routine, it creates a feeling inside that's hard to explain. The India-China border taught me that.",
+        category: "life",
+      },
+      {
+        id: "learning-2",
+        insight: "The simplest food - dal rice with veg curry - can be the most memorable when served with genuine warmth.",
+        category: "travel",
+      },
+      {
+        id: "learning-3",
+        insight: "Northeast people are chill, don't overthink, and are always welcoming. A quality worth learning.",
+        category: "people",
+      },
+      {
+        id: "learning-4",
+        insight: "Being at the right place at the right time is sometimes just luck. The Seven Sisters Falls taught me that.",
+        category: "life",
+      },
+      {
+        id: "learning-5",
+        insight: "Arunachal Pradesh might be even more beautiful than the Himalayas. India's best-kept secret is real.",
+        category: "travel",
+      },
+      {
+        id: "learning-6",
+        insight: "A small group moment in a big solo journey can be the highlight. Solo doesn't mean alone always.",
+        category: "people",
+      },
+    ],
+    impact: {
+      physical: 90,
+      emotional: 95,
+      spiritual: 75,
+      chaos: 70,
+    },
+    readingTime: 18,
+    featured: true,
+    published: true,
+    lastUpdated: "2025-01-31",
+  },
+
+  // ============================================
+  // 2026 - KOLKATA
+  // ============================================
+  {
+    id: "kolkata-2026",
+    slug: "kolkata-2026",
+    title: "Kolkata",
+    subtitle: "The city of joy and contradictions",
+    date: "2026-01",
+    year: 2026,
+    month: "January",
+    travelMode: "Flight",
+    companionship: "Mixed",
+    categories: ["cultural", "urban"],
+    destination: "Kolkata",
+    region: "West Bengal",
+    heroImage: "/images/journeys/kolkata-2026/hero.jpg",
+    thumbnailImage: "/images/journeys/kolkata-2026/thumb.jpg",
+    galleryImages: [],
+    tagline: "Where decay and beauty dance together.",
+    introduction:
+      "Placeholder: Write about Kolkata - the intellectual capital, the crumbling grandeur, the coffee houses, the Howrah bridge.",
+    whyIWent:
+      "Placeholder: What called you to the City of Joy?",
+    transformation: {
+      before: {
+        mindset: "Placeholder: Expectations of Kolkata",
+        expectations: ["Placeholder: Rosogolla? Poetry? History?"],
+        fears: ["Placeholder: Overwhelm?"],
+      },
+      after: {
+        changes: ["Placeholder: Understanding of Bengali culture"],
+        perspectives: ["Placeholder: New appreciation for intellectual heritage"],
+        whatStayed: ["Placeholder: The addas, the trams, the literature"],
+      },
+    },
+    peakExperience: {
+      title: "Placeholder: Coffee House",
+      description: "Placeholder: A conversation that captured Kolkata's spirit",
+      type: "connection",
+    },
+    timeline: [],
+    moments: [],
+    learnings: [
+      {
+        id: "learning-1",
+        insight: "Placeholder: What Kolkata taught about time",
+        category: "life",
+      },
+    ],
+    impact: {
+      physical: 25,
+      emotional: 65,
+      spiritual: 45,
+      chaos: 50,
+    },
+    readingTime: 8,
+    featured: false,
+    published: true,
+    lastUpdated: "2026-02-01",
+  },
+];
+
+/**
+ * Get all journeys as summaries for list views
+ */
+export function getJourneySummaries(): JourneySummary[] {
+  return journeys.map((journey) => ({
+    id: journey.id,
+    slug: journey.slug,
+    title: journey.title,
+    subtitle: journey.subtitle,
+    date: journey.date,
+    year: journey.year,
+    month: journey.month,
+    destination: journey.destination,
+    region: journey.region,
+    travelMode: journey.travelMode,
+    companionship: journey.companionship,
+    categories: journey.categories,
+    tagline: journey.tagline,
+    heroImage: journey.heroImage,
+    thumbnailImage: journey.thumbnailImage,
+    impact: journey.impact,
+    featured: journey.featured,
+    route: journey.route
+      ? {
+          totalDistance: journey.route.totalDistance,
+          totalDays: journey.route.totalDays,
+        }
+      : undefined,
+  }));
+}
+
+/**
+ * Get a single journey by slug
+ */
+export function getJourneyBySlug(slug: string): Journey | undefined {
+  return journeys.find((j) => j.slug === slug);
+}
+
+/**
+ * Get featured journeys
+ */
+export function getFeaturedJourneys(): JourneySummary[] {
+  return getJourneySummaries().filter((j) => j.featured);
+}
+
+/**
+ * Get journeys by category
+ */
+export function getJourneysByCategory(category: string): JourneySummary[] {
+  return getJourneySummaries().filter((j) => j.categories.includes(category as any));
+}
+
+/**
+ * Get journeys by travel mode
+ */
+export function getJourneysByTravelMode(mode: string): JourneySummary[] {
+  return getJourneySummaries().filter((j) => j.travelMode === mode);
+}
+
+/**
+ * Get all years with journeys
+ */
+export function getJourneyYears(): number[] {
+  return Array.from(new Set(journeys.map((j) => j.year))).sort((a, b) => b - a);
+}
+
+/**
+ * Get solo bike ride journeys (for route-heavy displays)
+ */
+export function getSoloBikeJourneys(): JourneySummary[] {
+  return getJourneySummaries().filter((j) => j.travelMode === "SOLO BIKE RIDE");
+}
+
+/**
+ * Get spiritual journeys
+ */
+export function getSpiritualJourneys(): JourneySummary[] {
+  return getJourneysByCategory("spiritual");
+}
+
+/**
+ * Get high-altitude journeys
+ */
+export function getHighAltitudeJourneys(): JourneySummary[] {
+  return getJourneysByCategory("high-altitude");
+}
