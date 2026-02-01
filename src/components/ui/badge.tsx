@@ -269,7 +269,7 @@ export function YearBadge({ year, isActive, onClick, className }: YearBadgeProps
    ============================================ */
 
 interface MoodIndicatorProps {
-  mood: "struggling" | "neutral" | "content" | "euphoric";
+  mood: string;
   size?: "sm" | "md";
   showLabel?: boolean;
   className?: string;
@@ -281,11 +281,13 @@ export function MoodIndicator({
   showLabel = false,
   className,
 }: MoodIndicatorProps) {
-  const moodConfig = {
+  const moodConfig: Record<string, { color: string; label: string }> = {
     struggling: { color: "bg-red-500", label: "Struggling" },
     neutral: { color: "bg-gray-500", label: "Neutral" },
     content: { color: "bg-green-500", label: "Content" },
     euphoric: { color: "bg-yellow-500", label: "Euphoric" },
+    excited: { color: "bg-orange-500", label: "Excited" },
+    reflective: { color: "bg-blue-500", label: "Reflective" },
   };
 
   const sizeClasses = {
@@ -293,7 +295,7 @@ export function MoodIndicator({
     md: "w-3 h-3",
   };
 
-  const config = moodConfig[mood];
+  const config = moodConfig[mood] || moodConfig.neutral;
 
   return (
     <span className={cn("inline-flex items-center gap-2", className)}>

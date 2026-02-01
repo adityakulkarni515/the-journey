@@ -27,13 +27,15 @@ export function LearningsSection({ learnings }: LearningsSectionProps) {
 
   if (learnings.length === 0) return null;
 
-  const categoryConfig = {
+  const categoryConfig: Record<string, { icon: typeof Sparkles; color: string; bgColor: string }> = {
     life: { icon: Sparkles, color: "text-accent-gold", bgColor: "bg-accent-gold/10" },
     travel: { icon: Mountain, color: "text-journey-altitude", bgColor: "bg-journey-altitude/10" },
     self: { icon: User, color: "text-journey-solo", bgColor: "bg-journey-solo/10" },
     people: { icon: Users, color: "text-journey-group", bgColor: "bg-journey-group/10" },
     nature: { icon: Mountain, color: "text-green-500", bgColor: "bg-green-500/10" },
     spiritual: { icon: Heart, color: "text-journey-spiritual", bgColor: "bg-journey-spiritual/10" },
+    perspective: { icon: BookOpen, color: "text-accent-sky", bgColor: "bg-accent-sky/10" },
+    cultural: { icon: Users, color: "text-purple-400", bgColor: "bg-purple-400/10" },
   };
 
   return (
@@ -56,7 +58,7 @@ export function LearningsSection({ learnings }: LearningsSectionProps) {
         {/* Learnings list */}
         <StaggerContainer className="space-y-6">
           {learnings.map((learning, index) => {
-            const config = categoryConfig[learning.category];
+            const config = categoryConfig[learning.category] || categoryConfig.life;
             const Icon = config.icon;
 
             return (
