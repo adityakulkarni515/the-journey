@@ -49,46 +49,35 @@ export function JourneyCard({
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className={cn("group", className)}
     >
-      <Link href={`/journeys/${journey.slug}`} className="block">
-        <div className="card-journey overflow-hidden">
-          {/* Image Section */}
-          <div className="relative aspect-[16/10] overflow-hidden">
+      <Link href={`/journeys/${journey.slug}`} className="block outline-none focus:outline-none">
+        <div className="card-journey">
+          {/* Image Section - Fixed aspect ratio for uniform size */}
+          <div className="relative aspect-[16/10] bg-background-secondary">
             {/* Actual image or placeholder gradient */}
             {journey.thumbnailImage || journey.heroImage ? (
               <img
                 src={journey.thumbnailImage || journey.heroImage}
                 alt={journey.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             ) : (
-              <>
-                <div className="absolute inset-0 bg-gradient-to-br from-background-secondary to-background-tertiary" />
-                {/* Placeholder image pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div
-                    className="w-full h-full"
-                    style={{
-                      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                    }}
-                  />
-                </div>
-              </>
+              <div className="absolute inset-0 bg-gradient-to-br from-background-secondary to-background-tertiary" />
             )}
 
             {/* Journey year badge */}
-            <div className="absolute top-4 left-4">
+            <div className="absolute top-4 left-4 z-10">
               <span className="px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full text-xs font-mono text-foreground">
                 {journey.year}
               </span>
             </div>
 
             {/* Travel mode indicator */}
-            <div className="absolute top-4 right-4">
+            <div className="absolute top-4 right-4 z-10">
               <TravelModeBadge mode={journey.travelMode} size="sm" showLabel={false} />
             </div>
 
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background-secondary via-transparent to-transparent" />
 
             {/* Route stats for bike/car journeys */}
             {showRoute && journey.route && (
@@ -173,44 +162,35 @@ function FeaturedJourneyCard({
     >
       <Link href={`/journeys/${journey.slug}`} className="block">
         <div className="relative overflow-hidden rounded-3xl bg-background-secondary border border-white/5 hover:border-white/10 transition-all duration-500">
-          <div className="grid lg:grid-cols-2 gap-0">
-            {/* Image Section */}
-            <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[500px] overflow-hidden">
+          <div className="flex flex-col lg:flex-row">
+            {/* Image Section - Fixed aspect ratio for uniform size */}
+            <div className="relative overflow-hidden lg:w-1/2 aspect-[4/3] lg:aspect-auto lg:min-h-[400px] bg-background-secondary">
               {/* Actual image or placeholder gradient */}
               {journey.heroImage ? (
                 <img
                   src={journey.heroImage}
                   alt={journey.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               ) : (
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-br from-background-secondary via-background-tertiary to-background" />
-                  {/* Pattern overlay */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div
-                      className="w-full h-full"
-                      style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-                      }}
-                    />
-                  </div>
-                </>
+                <div className="absolute inset-0 bg-gradient-to-br from-background-secondary via-background-tertiary to-background" />
               )}
 
+              {/* Strong fade gradient overlay - fades image towards content */}
+              <div className="absolute inset-y-0 -right-4 left-0 bg-gradient-to-r from-transparent via-background-secondary/50 to-background-secondary z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background-secondary via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-b from-background-secondary/50 via-transparent to-transparent" />
+
               {/* Featured badge */}
-              <div className="absolute top-6 left-6">
+              <div className="absolute top-6 left-6 z-20">
                 <span className="px-3 py-1.5 bg-accent-gold/20 backdrop-blur-sm rounded-full text-xs font-medium text-accent-gold uppercase tracking-wider">
                   Featured Journey
                 </span>
               </div>
-
-              {/* Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background-secondary lg:via-transparent lg:to-background-secondary" />
             </div>
 
             {/* Content Section */}
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
+            <div className="p-8 lg:p-12 flex flex-col justify-center lg:w-1/2 bg-background-secondary relative z-10">
               {/* Year & Mode */}
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-4xl font-display font-bold text-foreground/20">

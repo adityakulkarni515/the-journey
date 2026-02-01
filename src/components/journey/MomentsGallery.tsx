@@ -64,30 +64,17 @@ function MomentCard({ moment, index }: MomentCardProps) {
       >
         <div className="relative overflow-hidden rounded-2xl bg-background-secondary border border-white/5 hover:border-white/10 transition-all duration-500">
           {/* Image */}
-          <div className="aspect-[4/3] relative overflow-hidden">
+          <div className="relative overflow-hidden">
             {/* Actual image or fallback gradient */}
             {moment.image ? (
               <img
                 src={moment.image}
                 alt={moment.caption}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />
             ) : (
-              <>
-                <div className="absolute inset-0 bg-gradient-to-br from-background-secondary to-background-tertiary" />
-                <div className="absolute inset-0 opacity-10">
-                  <div
-                    className="w-full h-full"
-                    style={{
-                      backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`,
-                    }}
-                  />
-                </div>
-              </>
+              <div className="aspect-[4/3] bg-gradient-to-br from-background-secondary to-background-tertiary" />
             )}
-
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
 
             {/* Location badge */}
             {moment.location && (

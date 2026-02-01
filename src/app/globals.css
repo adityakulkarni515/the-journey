@@ -17,7 +17,31 @@
   }
 
   * {
-    @apply border-white/10;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Remove focus/hover outlines from interactive elements */
+  a:focus, a:hover,
+  button:focus, button:hover,
+  img:focus, img:hover {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .card-journey,
+  .card-journey *,
+  .card-journey img,
+  .card-journey a,
+  .card-journey div {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .card-journey:hover,
+  .card-journey:hover * {
+    border: none !important;
+    outline: none !important;
   }
 
   html {
@@ -117,13 +141,11 @@
      ============================================ */
 
   .card-journey {
-    @apply relative overflow-hidden rounded-2xl bg-background-secondary border border-white/5;
-    @apply transition-all duration-500 ease-out;
+    @apply relative overflow-hidden rounded-2xl bg-background-secondary;
   }
 
   .card-journey:hover {
-    @apply border-white/10 shadow-2xl shadow-black/50;
-    transform: translateY(-4px);
+    /* Clean hover - no borders, shadows or transforms */
   }
 
   .card-moment {

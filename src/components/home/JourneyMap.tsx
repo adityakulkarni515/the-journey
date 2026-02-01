@@ -74,10 +74,10 @@ export function JourneyMap({ journeys }: JourneyMapProps) {
             }} />
 
             {/* SVG for routes */}
-            <svg className="absolute inset-0 w-full h-full">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
               <defs>
                 <filter id="glow">
-                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feGaussianBlur stdDeviation="1" result="blur" />
                   <feMerge>
                     <feMergeNode in="blur" />
                     <feMergeNode in="SourceGraphic" />
@@ -94,51 +94,47 @@ export function JourneyMap({ journeys }: JourneyMapProps) {
                 const isActive = selected?.id === j.id || hovered?.id === j.id;
                 const color = isBike ? "#f59e0b" : isCar ? "#a855f7" : "#ec4899";
 
+                // Control point for curved line
                 const dx = dest.city.x - HOME.x;
                 const dy = dest.city.y - HOME.y;
                 const cx = HOME.x + dx * 0.5;
-                const cy = HOME.y + dy * 0.5 - Math.abs(dy) * 0.2;
+                const cy = HOME.y + dy * 0.5 - Math.abs(dy) * 0.15;
 
                 return (
                   <g key={key}>
                     {/* Glow effect */}
-                    <motion.path
-                      d={`M${HOME.x}%,${HOME.y}% Q${cx}%,${cy}% ${dest.city.x}%,${dest.city.y}%`}
+                    <path
+                      d={`M ${HOME.x} ${HOME.y} Q ${cx} ${cy} ${dest.city.x} ${dest.city.y}`}
                       fill="none"
                       stroke={color}
-                      strokeWidth={isActive ? 8 : 4}
-                      strokeOpacity={isActive ? 0.3 : 0.1}
+                      strokeWidth={isActive ? 1.5 : 0.8}
+                      strokeOpacity={isActive ? 0.4 : 0.15}
                       strokeLinecap="round"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 2, delay: 0.3 }}
                     />
                     {/* Main line */}
-                    <motion.path
-                      d={`M${HOME.x}%,${HOME.y}% Q${cx}%,${cy}% ${dest.city.x}%,${dest.city.y}%`}
+                    <path
+                      d={`M ${HOME.x} ${HOME.y} Q ${cx} ${cy} ${dest.city.x} ${dest.city.y}`}
                       fill="none"
                       stroke={color}
-                      strokeWidth={isActive ? 3 : 1.5}
-                      strokeOpacity={isActive ? 1 : 0.6}
-                      strokeDasharray={isBike ? "8,5" : isCar ? "15,8" : "5,5"}
+                      strokeWidth={isActive ? 0.6 : 0.3}
+                      strokeOpacity={isActive ? 1 : 0.7}
+                      strokeDasharray={isBike ? "2,1" : isCar ? "3,2" : "1,1"}
                       strokeLinecap="round"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.5, delay: 0.5 }}
                     />
-                    {/* Animated traveling dot */}
-                    {isActive && (
-                      <circle r="4" fill={color} filter="url(#glow)">
-                        <animateMotion
-                          dur="2s"
-                          repeatCount="indefinite"
-                          path={`M${HOME.x * 3},${HOME.y * 2.25} Q${cx * 3},${cy * 2.25} ${dest.city.x * 3},${dest.city.y * 2.25}`}
-                        />
-                      </circle>
-                    )}
+                    {/* Arrow at destination */}
+                    <circle
+                      cx={dest.city.x}
+                      cy={dest.city.y}
+                      r={isActive ? 1.2 : 0.8}
+                      fill={color}
+                      opacity={isActive ? 1 : 0.6}
+                    />
                   </g>
                 );
               })}
+
+              {/* Home marker in SVG */}
+              <circle cx={HOME.x} cy={HOME.y} r="1.5" fill="#34d399" />
             </svg>
 
             {/* Home Marker - Hyderabad */}
