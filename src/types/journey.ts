@@ -23,7 +23,7 @@ export type Companionship = "Solo" | "Mixed" | "Solo / Mixed" | "FRIENDS";
 /**
  * Journey categories for filtering and special sections
  */
-export type JourneyCategory = "spiritual" | "high-altitude" | "urban" | "cultural";
+export type JourneyCategory = "spiritual" | "high-altitude" | "urban" | "cultural" | "music";
 
 /**
  * Impact metrics for the journey visualization

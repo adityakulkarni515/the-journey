@@ -8,7 +8,7 @@
  */
 
 import { cn } from "@/lib/utils";
-import { getTravelModeIcon, Bike, Car, Plane, User, Users, Mountain, Heart } from "./icons";
+import { getTravelModeIcon, Bike, Car, Plane, User, Users, Mountain, Heart, Music } from "./icons";
 import type { TravelMode, Companionship, JourneyCategory } from "@/types/journey";
 
 /* ============================================
@@ -188,6 +188,11 @@ export function CategoryBadge({
       icon: Users,
       label: "Urban",
       style: "bg-foreground/5 text-foreground-muted border-foreground/10",
+    },
+    "music": {
+      icon: Music,
+      label: "Music",
+      style: "bg-purple-500/10 text-purple-400 border-purple-500/20",
     },
   };
 
