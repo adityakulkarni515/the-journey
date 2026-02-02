@@ -220,6 +220,7 @@ export interface JourneySummary {
   route?: {
     totalDistance: number;
     totalDays: number;
+    maxElevation?: number;
   };
 }
 

@@ -1801,6 +1801,12 @@ export const journeys: Journey[] = [
     categories: ["cultural", "high-altitude"],
     destination: "Kashmir",
     region: "Kashmir",
+    route: {
+      locations: [],
+      totalDistance: 0,
+      totalDays: 5,
+      maxElevation: 3500,
+    },
     heroImage: "/images/journeys/kashmir-2024/hero.jpg",
     thumbnailImage: "/images/journeys/kashmir-2024/thumb.jpg",
     galleryImages: [
@@ -3147,6 +3153,7 @@ export function getJourneySummaries(): JourneySummary[] {
       ? {
           totalDistance: journey.route.totalDistance,
           totalDays: journey.route.totalDays,
+          maxElevation: journey.route.maxElevation,
         }
       : undefined,
   }));

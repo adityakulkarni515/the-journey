@@ -80,11 +80,13 @@ function HighAltitudeJourneyCard({ journey, index }: HighAltitudeJourneyCardProp
               <div className="absolute inset-0 bg-gradient-to-br from-journey-altitude/20 via-transparent to-background-secondary/50" />
 
               {/* Elevation badge */}
-              <div className="absolute top-4 left-4">
-                <span className="px-3 py-1.5 bg-black/60 backdrop-blur-sm rounded-full text-xs font-mono text-journey-altitude">
-                  Max {journey.route?.totalDistance ? "5,799m" : "4,000m+"}
-                </span>
-              </div>
+              {journey.route?.maxElevation && (
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1.5 bg-black/60 backdrop-blur-sm rounded-full text-xs font-mono text-journey-altitude">
+                    Max {journey.route.maxElevation.toLocaleString()}m
+                  </span>
+                </div>
+              )}
 
               {/* Travel mode */}
               <div className="absolute bottom-4 left-4">
