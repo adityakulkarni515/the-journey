@@ -2918,7 +2918,6 @@ export const journeys: Journey[] = [
     },
     timeline: [
       {
-        id: "day-1",
         day: 1,
         date: "Day 1",
         title: "Arrival in Kolkata",
@@ -2929,7 +2928,6 @@ export const journeys: Journey[] = [
         mood: "excited",
       },
       {
-        id: "day-2",
         day: 2,
         date: "Day 2",
         title: "Music and Markets",
@@ -2940,7 +2938,6 @@ export const journeys: Journey[] = [
         mood: "content",
       },
       {
-        id: "day-3",
         day: 3,
         date: "Day 3",
         title: "Temples and Yellow Taxis",
@@ -2956,7 +2953,6 @@ export const journeys: Journey[] = [
         mood: "euphoric",
       },
       {
-        id: "day-4",
         day: 4,
         date: "Day 4",
         title: "Solo Exploration Begins",
@@ -2973,7 +2969,6 @@ export const journeys: Journey[] = [
         mood: "reflective",
       },
       {
-        id: "day-5",
         day: 5,
         date: "Day 5",
         title: "Howrah Bridge and Street Food Heaven",
@@ -2991,7 +2986,6 @@ export const journeys: Journey[] = [
         mood: "euphoric",
       },
       {
-        id: "day-6",
         day: 6,
         date: "Day 6",
         title: "Farewell to Kolkata",
