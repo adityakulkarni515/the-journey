@@ -76,7 +76,7 @@ export interface DayEntry {
   distance?: number;            // km traveled that day
   elevation?: number;           // max elevation reached
   weather?: string;
-  mood: "struggling" | "neutral" | "content" | "euphoric";
+  mood: "struggling" | "neutral" | "content" | "euphoric" | "excited";
   summary: string;              // Placeholder text, to be replaced with real content
   highlights?: string[];
   peoplemet?: string[];
