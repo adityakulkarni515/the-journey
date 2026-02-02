@@ -2922,7 +2922,7 @@ export const journeys: Journey[] = [
         date: "Day 1",
         title: "Arrival in Kolkata",
         summary: "Evening flight and dinner with Guruji",
-        description:
+        journalEntry:
           "After work, I took my 6 PM flight and reached Kolkata. Checked into the hotel and had a great dinner with Guruji. The journey had begun.",
         highlights: ["Evening flight from Hyderabad", "Dinner with Guruji"],
         mood: "excited",
@@ -2932,7 +2932,7 @@ export const journeys: Journey[] = [
         date: "Day 2",
         title: "Music and Markets",
         summary: "Guruji's music, Gariahat market, and the concert",
-        description:
+        journalEntry:
           "Spent the day listening to Guruji play and trying to learn something from it. In the afternoon, took a small walk in the Gariahat market area. In the evening, the concert happened — it was beautiful. Had dinner and the day ended on a musical note.",
         highlights: ["Learning from Guruji's music", "Gariahat market walk", "Evening concert"],
         mood: "content",
@@ -2942,7 +2942,7 @@ export const journeys: Journey[] = [
         date: "Day 3",
         title: "Temples and Yellow Taxis",
         summary: "Dakshineshwar, Belur Math, and playing music with Guruji",
-        description:
+        journalEntry:
           "Started with a rich breakfast at the hotel. Visited Dakshineshwar Durga Temple and the nearby Belur Math. Had a great lunch with authentic Kolkata cuisine. Another concert was on, and I got the precious opportunity to play music with Guruji for some time. Later, explored the city in the classic yellow taxi.",
         highlights: [
           "Dakshineshwar Durga Temple",
@@ -2957,7 +2957,7 @@ export const journeys: Journey[] = [
         date: "Day 4",
         title: "Solo Exploration Begins",
         summary: "Victoria Memorial, boat ride, and Belur Math revisited",
-        description:
+        journalEntry:
           "Time to say goodbye to Guruji. The solo exploration began. Moved to a new hotel in the Esplanade area. Visited the magnificent Victoria Memorial. Found an amazing tea place and a chat shop with mouthwatering taste. After afternoon rest, took the metro to Howrah Station, then a cab to Belur Math — the origin of the Ramakrishna Math. The evening was peaceful there. Later, took a night boat ride across the Hooghly River to reach Dakshineshwar. Took the metro back to Esplanade and had dinner at the hotel.",
         highlights: [
           "Farewell to Guruji",
@@ -2973,7 +2973,7 @@ export const journeys: Journey[] = [
         date: "Day 5",
         title: "Howrah Bridge and Street Food Heaven",
         summary: "The iconic bridge, flower market, and Kolkata's legendary food",
-        description:
+        journalEntry:
           "Started towards Howrah Bridge — the classic attraction of the city. Visited the ghat nearby after crossing the beautiful flower market. Took timelapse shots of the bridge. Had lemon tea and bought a lottery ticket — a Kolkata tradition. Headed to Bara Bazaar for the iconic club kachori at the most viral shop. Back at hotel for rest, then to Shobha Bazaar for brinjal pakoda, aloo pakoda, and onion pakoda — all mouthwatering. Then the sweets: rasgulla, mishti doi, and a thick creamy milk sweet. Had jhal muri while returning. Spotted a Udupi restaurant and couldn't resist — had idli and vada. As a South Indian, we miss this badly in other regions!",
         highlights: [
           "Howrah Bridge timelapse",
@@ -2990,7 +2990,7 @@ export const journeys: Journey[] = [
         date: "Day 6",
         title: "Farewell to Kolkata",
         summary: "Eco Park, Shrutinandan music school, and goodbye",
-        description:
+        journalEntry:
           "Flight was at 10 PM, so had one more day. Started at 11 AM and went to Eco Park. Took a cab to Shrutinandan — a renowned music school in Kolkata. The cab driver explained every turn: the New Town area with modern infrastructure and MNC companies. Unfortunately, no classes were on that day, but I got a tour of the music school — that was enough. Checked out, headed to the airport, got some time for timelapse shots. Said goodbye to Kolkata... until next time.",
         highlights: [
           "Eco Park",
