@@ -3095,17 +3095,17 @@ export const journeys: Journey[] = [
       {
         id: "learning-2",
         insight: "Kolkata moves at its own pace — there's beauty in the city's refusal to rush",
-        category: "perspective",
+        category: "self",
       },
       {
         id: "learning-3",
         insight: "Street food is not just food in Kolkata — it's culture, tradition, and community",
-        category: "cultural",
+        category: "travel",
       },
       {
         id: "learning-4",
         insight: "The contrast between old Kolkata and New Town shows a city honoring its past while building its future",
-        category: "perspective",
+        category: "self",
       },
     ],
     impact: {
